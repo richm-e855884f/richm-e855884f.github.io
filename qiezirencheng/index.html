@@ -1,0 +1,1815 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>茄子人成年短视频 - 精选条目与分类导航</title>
+  <meta name="description" content="茄子人成年短视频聚合精选条目、分类导航与深度解析，收录都市情景、职场观察、生活实验、幽默短剧等方向，适合成年观众查找可看内容与类型参考。">
+  <meta name="keywords" content="成年短剧合集,都市情景短视频,职场观察短剧,生活实验视频,幽默短剧推荐">
+  <style>
+    :root {
+      --brand: #2f5e3b;
+      --brand-light: #e8f0e6;
+      --brand-dark: #1e3e28;
+      --accent: #c4452c;
+      --accent-soft: #fce9e5;
+      --text: #1f2a1f;
+      --text-secondary: #4d5e4d;
+      --text-muted: #6f7e6f;
+      --bg: #f7f9f5;
+      --panel: #ffffff;
+      --border: #d9e0d6;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --font-sans: system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+      --sticky-offset: 130px;
+      --container: 1360px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--sticky-offset);
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* 吸顶区域 */
+    .sticky-group {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .announcement-bar {
+      background: var(--brand-dark);
+      color: #eef5ec;
+      font-size: 0.875rem;
+      padding: 0.5rem 1.5rem;
+      text-align: center;
+      letter-spacing: 0.02em;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .announcement-bar strong {
+      color: #ffd966;
+      font-weight: 600;
+    }
+
+    .site-header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-inner {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-shrink: 0;
+    }
+
+    .brand-svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    .brand-text {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--brand-dark);
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .header-nav {
+      display: flex;
+      gap: 0.25rem 1.2rem;
+      flex-wrap: wrap;
+      align-items: center;
+      flex: 1;
+    }
+
+    .header-nav a {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      white-space: nowrap;
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .header-nav a:hover {
+      color: var(--brand);
+      border-bottom-color: var(--brand);
+      text-decoration: none;
+    }
+
+    .header-search {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #f2f5f0;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.3rem 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .header-search input {
+      border: none;
+      background: transparent;
+      font: inherit;
+      font-size: 0.85rem;
+      color: var(--text);
+      outline: none;
+      width: 150px;
+    }
+
+    .header-search input::placeholder {
+      color: #9aaa9a;
+    }
+
+    .header-search button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--brand);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0;
+    }
+
+    /* 首屏 */
+    .hero {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: var(--brand-dark);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      max-width: 620px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem 1.5rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--brand);
+      color: #fff;
+      border-color: var(--brand);
+    }
+
+    .btn-primary:hover {
+      background: var(--brand-dark);
+      border-color: var(--brand-dark);
+      text-decoration: none;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--brand);
+      border-color: var(--brand);
+    }
+
+    .btn-outline:hover {
+      background: var(--brand-light);
+      text-decoration: none;
+    }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-svg-wrap {
+      width: 100%;
+      max-width: 380px;
+      aspect-ratio: 1 / 1;
+      background: var(--brand-light);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-svg-wrap svg {
+      width: 85%;
+      height: 85%;
+    }
+
+    /* 主内容三栏 */
+    .main-container {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 1.5rem 2rem;
+      display: grid;
+      grid-template-columns: 180px 1fr 260px;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    /* 左侧频道索引 */
+    .channel-sidebar {
+      position: sticky;
+      top: var(--sticky-offset);
+      background: var(--panel);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      padding: 1rem 0.75rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .channel-sidebar h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      font-weight: 600;
+      padding: 0 0.5rem 0.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 0.5rem;
+    }
+
+    .channel-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .channel-list a {
+      display: block;
+      padding: 0.4rem 0.5rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      transition: background 0.1s, color 0.1s;
+    }
+
+    .channel-list a:hover {
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      text-decoration: none;
+    }
+
+    /* 中间主内容区 */
+    .main-content {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .section {
+      background: var(--panel);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      padding: 1.5rem 1.5rem 1.75rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--brand-dark);
+      letter-spacing: -0.01em;
+    }
+
+    .section-header .more-link {
+      font-size: 0.85rem;
+      color: var(--brand);
+      font-weight: 500;
+    }
+
+    /* 概览文本 */
+    .overview-text {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    .overview-text p {
+      margin-bottom: 0.75rem;
+    }
+
+    .overview-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* 精选卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--panel);
+      transition: box-shadow 0.15s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .card-img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: var(--brand-light);
+    }
+
+    .card-body {
+      padding: 0.9rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      flex: 1;
+    }
+
+    .card-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .tag-accent {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .card-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    .card-meta .hot {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* 更新列表 */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .update-item {
+      display: flex;
+      gap: 0.75rem;
+      align-items: baseline;
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 0.92rem;
+    }
+
+    .update-item:last-child {
+      border-bottom: none;
+    }
+
+    .update-time {
+      flex-shrink: 0;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      width: 70px;
+    }
+
+    .update-name {
+      font-weight: 600;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+
+    .update-summary {
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    /* 分类入口网格 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+    }
+
+    .category-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+      padding: 1rem 0.5rem;
+      background: var(--brand-light);
+      border-radius: var(--radius-md);
+      border: 1px solid transparent;
+      transition: background 0.15s, border-color 0.15s;
+      text-align: center;
+      color: var(--brand-dark);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .category-item:hover {
+      background: #dbe8d8;
+      border-color: var(--brand);
+      text-decoration: none;
+    }
+
+    .category-item small {
+      font-weight: 400;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    /* 深度解析 */
+    .deep-dive h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin: 1.25rem 0 0.5rem;
+    }
+
+    .deep-dive h3:first-of-type {
+      margin-top: 0;
+    }
+
+    .deep-dive p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 0.75rem;
+    }
+
+    .deep-dive ul {
+      margin: 0.5rem 0 0.75rem 1.25rem;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    .deep-dive li {
+      margin-bottom: 0.3rem;
+    }
+
+    /* 体验指南步骤 */
+    .guide-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .guide-step {
+      display: flex;
+      gap: 0.9rem;
+      align-items: flex-start;
+    }
+
+    .step-num {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: var(--brand);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-top: 0.15rem;
+    }
+
+    .step-content h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+
+    .step-content p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      background: #fafcfa;
+    }
+
+    .faq-item summary {
+      cursor: pointer;
+      padding: 0.75rem 1rem;
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--text);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.15s;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      font-size: 1.1rem;
+      color: var(--brand);
+      font-weight: 400;
+      transition: transform 0.2s;
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-item summary:hover {
+      background: var(--brand-light);
+    }
+
+    .faq-answer {
+      padding: 0 1rem 0.75rem;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      border-top: 1px solid var(--border);
+      padding-top: 0.6rem;
+      margin-top: 0;
+    }
+
+    /* 评论列表 */
+    .comment-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      max-height: 460px;
+      overflow-y: auto;
+      padding-right: 0.25rem;
+    }
+
+    .comment-item {
+      padding: 0.6rem 0.75rem;
+      background: #f7faf6;
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--brand);
+      font-size: 0.88rem;
+    }
+
+    .comment-user {
+      font-weight: 600;
+      color: var(--brand-dark);
+      font-size: 0.82rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .comment-text {
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* 资讯列表 */
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .news-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .news-thumb {
+      width: 100px;
+      height: 70px;
+      border-radius: var(--radius-sm);
+      object-fit: cover;
+      flex-shrink: 0;
+      background: var(--brand-light);
+    }
+
+    .news-body {
+      flex: 1;
+    }
+
+    .news-title {
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--text);
+      margin-bottom: 0.15rem;
+    }
+
+    .news-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 0.2rem;
+    }
+
+    .news-summary {
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* 相关推荐标签索引 */
+    .tag-index {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag-index a {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      transition: background 0.1s, border-color 0.1s, color 0.1s;
+      font-weight: 500;
+    }
+
+    .tag-index a:hover {
+      background: var(--brand-light);
+      border-color: var(--brand);
+      color: var(--brand-dark);
+      text-decoration: none;
+    }
+
+    /* 排行榜 */
+    .rank-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .rank-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.45rem 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 0.9rem;
+    }
+
+    .rank-item:last-child {
+      border-bottom: none;
+    }
+
+    .rank-num {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      background: var(--brand-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--brand-dark);
+    }
+
+    .rank-num.top3 {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .rank-name {
+      font-weight: 600;
+      color: var(--text);
+      flex: 1;
+    }
+
+    .rank-score {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* 右侧辅助栏 */
+    .right-sidebar {
+      position: sticky;
+      top: var(--sticky-offset);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .sidebar-card {
+      background: var(--panel);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      padding: 1.1rem 1rem 1.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sidebar-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sidebar-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .sidebar-list li {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .sidebar-list li .dot {
+      color: var(--brand);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* 页尾 */
+    .site-footer {
+      background: var(--brand-dark);
+      color: #c8d8c5;
+      margin-top: 3rem;
+      padding: 2.5rem 1.5rem 1.5rem;
+    }
+
+    .footer-inner {
+      max-width: var(--container);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer-brand .brand-text {
+      color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      color: #a8bfa4;
+    }
+
+    .footer-col h4 {
+      color: #eef5ec;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.04em;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .footer-col ul a {
+      color: #a8bfa4;
+      font-size: 0.82rem;
+      transition: color 0.1s;
+    }
+
+    .footer-col ul a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      max-width: var(--container);
+      margin: 2rem auto 0;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.75rem;
+      color: #8fa88b;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* 搜索无结果提示 */
+    .no-results {
+      display: none;
+      padding: 0.75rem 1rem;
+      background: #fdf2e9;
+      border: 1px solid #f5cba7;
+      border-radius: var(--radius-sm);
+      color: #9c640c;
+      font-size: 0.88rem;
+      margin-top: 0.75rem;
+    }
+
+    .no-results.visible {
+      display: block;
+    }
+
+    /* 响应式 */
+    @media (max-width: 1100px) {
+      .main-container {
+        grid-template-columns: 1fr 240px;
+      }
+      .channel-sidebar {
+        display: none;
+      }
+      .hero {
+        grid-template-columns: 1fr 300px;
+        gap: 1.5rem;
+      }
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 850px) {
+      .main-container {
+        grid-template-columns: 1fr;
+      }
+      .right-sidebar {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1rem;
+      }
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-desc {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
+      .hero-visual {
+        order: -1;
+      }
+      .hero-svg-wrap {
+        max-width: 280px;
+      }
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        gap: 0.5rem;
+      }
+      .header-nav {
+        gap: 0.2rem 0.8rem;
+      }
+      .header-nav a {
+        font-size: 0.8rem;
+      }
+      .header-search input {
+        width: 100px;
+      }
+      .hero {
+        padding: 1.5rem 1rem 1rem;
+      }
+      .hero-content h1 {
+        font-size: 1.6rem;
+      }
+      .main-container {
+        padding: 0 1rem 1rem;
+      }
+      .section {
+        padding: 1rem;
+      }
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+      .news-thumb {
+        width: 70px;
+        height: 50px;
+      }
+      .update-item {
+        flex-wrap: wrap;
+        gap: 0.2rem 0.5rem;
+      }
+      .update-time {
+        width: auto;
+      }
+    }
+
+    /* 焦点样式 */
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible,
+    input:focus-visible {
+      outline: 2px solid var(--brand);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    .search-highlight {
+      background: #fff3cd;
+      padding: 0.05em 0.15em;
+      border-radius: 3px;
+    }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+  <!-- 吸顶区域 -->
+  <div class="sticky-group">
+    <div class="announcement-bar">
+      <strong>本周新增 12 条条目</strong> · 都市情景《合租议事厅》第 9 集已上线 · 11 月 7 日更新
+    </div>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <svg class="brand-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <ellipse cx="20" cy="24" rx="13" ry="10" fill="#2f5e3b"/>
+            <ellipse cx="20" cy="22" rx="11" ry="8" fill="#4a8f5c"/>
+            <path d="M20 6 C18 10 15 12 14 16" stroke="#2f5e3b" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <ellipse cx="20" cy="8" rx="6" ry="3.5" fill="#6aab7a" transform="rotate(-15 20 8)"/>
+            <ellipse cx="24" cy="20" rx="1.8" ry="2.2" fill="#fff"/>
+            <ellipse cx="16" cy="20" rx="1.8" ry="2.2" fill="#fff"/>
+            <circle cx="24.2" cy="20.6" r="0.9" fill="#1e3e28"/>
+            <circle cx="16.2" cy="20.6" r="0.9" fill="#1e3e28"/>
+            <path d="M18 25 Q20 27 22 25" stroke="#1e3e28" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span class="brand-text">茄子人成年短视频</span>
+        </div>
+        <nav class="header-nav" aria-label="主题导航">
+          <a href="/#overview">领域概览</a>
+          <a href="/#featured">精选条目</a>
+          <a href="/#updates">最新更新</a>
+          <a href="/#categories">分类入口</a>
+          <a href="/#deep-dive">深度解析</a>
+          <a href="/#faq">常见问答</a>
+        </nav>
+        <div class="header-search">
+          <label for="site-search" style="position:absolute;width:1px;height:1px;overflow:hidden;">搜索条目</label>
+          <input type="search" id="site-search" placeholder="搜索条目…" aria-label="搜索条目">
+          <button type="button" id="search-btn">查找</button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <h1 id="hero-title">茄子人成年短视频</h1>
+      <p class="hero-desc">
+        汇聚都市情景、职场观察、生活实验、幽默短剧等成年向短视频条目，收录具体剧集、创作者专题与类型解析，适合想快速找到可看内容、了解类型差异的成年观众。
+      </p>
+      <div class="hero-actions">
+        <a href="/#featured" class="btn btn-primary">浏览精选条目</a>
+        <a href="/#categories" class="btn btn-outline">按分类查找</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-svg-wrap">
+        <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="30" y="50" width="240" height="180" rx="16" fill="#fff" stroke="#2f5e3b" stroke-width="3"/>
+          <rect x="50" y="70" width="200" height="10" rx="5" fill="#d9e0d6"/>
+          <rect x="50" y="90" width="140" height="8" rx="4" fill="#e8f0e6"/>
+          <rect x="50" y="108" width="200" height="60" rx="8" fill="#e8f0e6"/>
+          <circle cx="150" cy="138" r="18" fill="#4a8f5c"/>
+          <polygon points="144,130 144,146 158,138" fill="#fff"/>
+          <rect x="50" y="180" width="90" height="8" rx="4" fill="#d9e0d6"/>
+          <rect x="50" y="196" width="120" height="8" rx="4" fill="#d9e0d6"/>
+          <ellipse cx="230" cy="210" rx="22" ry="14" fill="#c4452c" opacity="0.15"/>
+          <text x="218" y="215" font-size="11" fill="#c4452c" font-weight="600">NEW</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 主内容三栏 -->
+  <div class="main-container">
+
+    <!-- 左侧频道索引 -->
+    <aside class="channel-sidebar" aria-label="频道索引">
+      <h2>频道索引</h2>
+      <ul class="channel-list">
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#featured">精选条目</a></li>
+        <li><a href="/#updates">最新更新</a></li>
+        <li><a href="/#categories">分类入口</a></li>
+        <li><a href="/#deep-dive">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#faq">常见问答</a></li>
+        <li><a href="/#comments">用户评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#related">相关推荐</a></li>
+        <li><a href="/#ranking">热门榜单</a></li>
+      </ul>
+    </aside>
+
+    <!-- 中间主内容 -->
+    <main class="main-content" id="main-content">
+
+      <!-- 1. 主题领域概览 -->
+      <section class="section" id="overview" aria-labelledby="overview-title">
+        <div class="section-header">
+          <h2 id="overview-title">领域概览</h2>
+        </div>
+        <div class="overview-text">
+          <p>茄子人成年短视频聚焦于面向成年观众的情景短剧与生活观察类内容，涵盖都市合租、职场沟通、家庭关系、消费决策、社交实验等具体方向。这类内容通常以 3—15 分钟的短篇形式呈现，强调剧本结构、表演自然度与话题共鸣度，区别于纯搞笑切片或游戏集锦。</p>
+          <p>当前值得关注的条目包括都市合租情景剧《合租议事厅》、职场沟通系列《会议室别传》、生活消费实验《一百块过一周》以及幽默短剧《电梯间尴尬学》。这些条目分别代表情景喜剧、职场观察、生活纪实与轻喜剧四种常见形态，更新节奏以周更和双周更为主。</p>
+          <p>成年向短视频的评判维度通常包括剧本完成度、角色可信度、话题现实感与制作稳定度。观众在选择时可按“先看类型、再看更新频率、最后比较单集时长”的顺序筛选，避免在低完成度条目上消耗时间。</p>
+        </div>
+      </section>
+
+      <!-- 2. 精选内容推荐 -->
+      <section class="section" id="featured" aria-labelledby="featured-title">
+        <div class="section-header">
+          <h2 id="featured-title">精选内容推荐</h2>
+          <a href="/#updates" class="more-link">查看最新更新 →</a>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/qiezi-hezu47/400/300" alt="合租议事厅短剧封面" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">合租议事厅</h3>
+              <div class="card-tags">
+                <span class="tag">都市情景</span>
+                <span class="tag">合租</span>
+                <span class="tag">周更</span>
+              </div>
+              <p class="card-desc">四位合租青年围绕水电费、卫生排班与访客规则展开的轻喜剧，第 9 集聚焦“冰箱食物失踪案”，台词密度高、生活细节扎实。</p>
+              <div class="card-meta">
+                <span>更新至第 9 集</span>
+                <span class="hot">热度 8.7</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/qiezi-huiyi12/400/300" alt="会议室别传职场短剧封面" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">会议室别传</h3>
+              <div class="card-tags">
+                <span class="tag">职场观察</span>
+                <span class="tag">沟通</span>
+                <span class="tag">双周更</span>
+              </div>
+              <p class="card-desc">以项目汇报、跨部门协作和绩效面谈为场景的职场短剧，每集拆解一个具体沟通难题，适合对职场对话感兴趣的观众。</p>
+              <div class="card-meta">
+                <span>更新至第 6 集</span>
+                <span class="hot">热度 8.4</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/qiezi-yibai35/400/300" alt="一百块过一周生活实验封面" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">一百块过一周</h3>
+              <div class="card-tags">
+                <span class="tag">生活实验</span>
+                <span class="tag">消费</span>
+                <span class="tag">周更</span>
+              </div>
+              <p class="card-desc">记录成年人在限定预算内的真实消费选择，涉及买菜、通勤与社交开销，每集结尾附具体账单拆解。</p>
+              <div class="card-meta">
+                <span>更新至第 14 集</span>
+                <span class="hot">热度 8.2</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/qiezi-dianti58/400/300" alt="电梯间尴尬学幽默短剧封面" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">电梯间尴尬学</h3>
+              <div class="card-tags">
+                <span class="tag">幽默短剧</span>
+                <span class="tag">社交</span>
+                <span class="tag">周更</span>
+              </div>
+              <p class="card-desc">每集 3 分钟，还原电梯、便利店、前台等场景中的社交小尴尬，用夸张表演呈现成年人的“硬聊”时刻。</p>
+              <div class="card-meta">
+                <span>更新至第 21 集</span>
+                <span class="hot">热度 8.9</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/qiezi-banbao72/400/300" alt="半包烟剧本室创作访谈封面" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">半包烟剧本室</h3>
+              <div class="card-tags">
+                <span class="tag">创作者专题</span>
+                <span class="tag">编剧</span>
+                <span class="tag">月更</span>
+              </div>
+              <p class="card-desc">短剧编剧访谈与剧本拆解，讨论如何把生活观察压缩成 5 分钟剧本，适合对创作过程感兴趣的观众。</p>
+              <div class="card-meta">
+                <span>更新至第 4 期</span>
+                <span class="hot">热度 7.8</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://picsum.photos/seed/qiezi-wanfan91/400/300" alt="晚饭桌辩论会家庭短剧封面" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">晚饭桌辩论会</h3>
+              <div class="card-tags">
+                <span class="tag">家庭关系</span>
+                <span class="tag">对话</span>
+                <span class="tag">周更</span>
+              </div>
+              <p class="card-desc">一家三口在晚饭桌上讨论消费、婚恋与代际话题，剧本采用固定机位、长对话形式，话题现实感强。</p>
+              <div class="card-meta">
+                <span>更新至第 11 集</span>
+                <span class="hot">热度 8.1</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="section" id="updates" aria-labelledby="updates-title">
+        <div class="section-header">
+          <h2 id="updates-title">最新更新</h2>
+          <span style="font-size:0.8rem;color:var(--text-muted);">截至 2026-11-08</span>
+        </div>
+        <div class="update-list">
+          <div class="update-item">
+            <span class="update-time">今天 09:30</span>
+            <span class="update-name">合租议事厅</span>
+            <span class="update-summary">第 9 集上线：冰箱食物失踪案，合租规则再起争议</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">今天 08:15</span>
+            <span class="update-name">会议室别传</span>
+            <span class="update-summary">第 6 集预告发布：跨部门协作中的“甩锅”话术</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">昨天 21:10</span>
+            <span class="update-name">一百块过一周</span>
+            <span class="update-summary">第 14 集上线：预算内如何安排三天伙食</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">昨天 18:40</span>
+            <span class="update-name">电梯间尴尬学</span>
+            <span class="update-summary">第 21 集上线：便利店结账时的零钱对话</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11 月 6 日</span>
+            <span class="update-name">晚饭桌辩论会</span>
+            <span class="update-summary">第 11 集上线：该不该为爱好花半个月工资</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11 月 5 日</span>
+            <span class="update-name">半包烟剧本室</span>
+            <span class="update-summary">第 4 期上线：编剧聊如何从通勤见闻提炼台词</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11 月 3 日</span>
+            <span class="update-name">合租议事厅</span>
+            <span class="update-summary">第 8 集上线：访客留宿规则投票</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11 月 2 日</span>
+            <span class="update-name">电梯间尴尬学</span>
+            <span class="update-summary">第 20 集上线：电梯里遇到前同事</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section" id="categories" aria-labelledby="categories-title">
+        <div class="section-header">
+          <h2 id="categories-title">分类入口</h2>
+        </div>
+        <div class="category-grid">
+          <a href="/#featured" class="category-item">都市情景 <small>合租·邻里·通勤</small></a>
+          <a href="/#featured" class="category-item">职场观察 <small>沟通·协作·汇报</small></a>
+          <a href="/#featured" class="category-item">生活实验 <small>消费·预算·习惯</small></a>
+          <a href="/#featured" class="category-item">幽默短剧 <small>社交·尴尬·反转</small></a>
+          <a href="/#featured" class="category-item">家庭关系 <small>代际·饭桌·日常</small></a>
+          <a href="/#featured" class="category-item">创作者专题 <small>编剧·幕后·拆解</small></a>
+          <a href="/#featured" class="category-item">消费决策 <small>预算·账单·选择</small></a>
+          <a href="/#featured" class="category-item">社交实验 <small>对话·边界·规则</small></a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析 -->
+      <section class="section deep-dive" id="deep-dive" aria-labelledby="deep-dive-title">
+        <div class="section-header">
+          <h2 id="deep-dive-title">深度解析</h2>
+        </div>
+        <h3>都市情景与幽默短剧的差异在哪</h3>
+        <p>都市情景侧重连续人物关系与生活规则冲突，比如合租分摊、邻里噪音、访客边界，剧本需要维护一条能持续发展的关系线。幽默短剧则更依赖单集反转和场景压缩，每集独立成立，靠一个尴尬瞬间或一句错位台词完成笑点。两者对表演节奏的要求不同：情景剧需要角色一致性，短剧允许夸张切换。</p>
+        <p>如果偏好“跟着人物一起生活”的观看感，都市情景更合适；如果偏好“三分钟一个笑点”的轻量消费，幽默短剧更直接。两者的共同点是都要求台词生活化，避免书面语腔调。</p>
+        <h3>职场观察类条目的评判维度</h3>
+        <p>职场观察短视频通常以会议、汇报、协作、绩效沟通为场景，判断其质量可参考三个具体维度：</p>
+        <ul>
+          <li><strong>场景真实度</strong>：是否还原了会议室、工位、线上沟通等具体环境，而不是抽象办公桌。</li>
+          <li><strong>对话信息量</strong>：台词是否包含可识别的职场话术，如“对齐一下”“先拉个群”，而非空泛争执。</li>
+          <li><strong>问题拆解度</strong>：每集是否聚焦一个具体沟通难点，比如“如何拒绝临时加需求”，而不是泛泛讨论职场压力。</li>
+        </ul>
+        <h3>生活实验类短视频的判断方法</h3>
+        <p>生活实验条目以预算、消费、习惯为题材，评估时重点看数据是否可验证。例如《一百块过一周》每集结尾展示具体账单，包括菜价、交通费与临时支出，观众可以对照自己的城市生活成本。若条目只展示结论而不给过程，参考价值会明显降低。</p>
+        <p>另一个判断点是实验边界是否清晰：限定预算是否包含房租、是否允许动用存货、是否计算社交开销。边界越明确，内容越具备可比性。</p>
+        <h3>成年向短剧的观看顺序建议</h3>
+        <p>第一次接触这类内容，可先从单集独立、时长 3—5 分钟的幽默短剧入手，建立对节奏的适应；再转向 8—12 分钟的都市情景，感受连续人物关系；最后进入职场观察与生活实验，这两类信息密度更高，需要更专注的观看状态。按此顺序切换，能减少因类型错配带来的弃看。</p>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="section" id="guide" aria-labelledby="guide-title">
+        <div class="section-header">
+          <h2 id="guide-title">体验指南</h2>
+        </div>
+        <div class="guide-steps">
+          <div class="guide-step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>先确定可投入的单集时长</h4>
+              <p>3—5 分钟适合碎片时间，优先看幽默短剧；8—12 分钟适合完整观看，优先看都市情景；15 分钟以上通常为职场观察或生活实验，需要相对专注。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>按更新频率判断追更成本</h4>
+              <p>周更条目适合稳定追看，双周更适合作为补充，月更创作者专题适合按兴趣挑拣。更新频率不稳定的条目，建议先看前两集再决定是否投入。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>比较同类条目的完成度</h4>
+              <p>同一类型下，优先选择有固定角色、固定场景、固定时长的条目，这通常意味着制作流程更稳定。单集之间风格跳跃过大的条目，连贯观看体验会打折扣。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h4>用两集试看决定去留</h4>
+              <p>第一集看设定与节奏，第二集看是否延续质量。若第二集明显依赖重复套路或话题注水，可转向同类型其他条目，避免在单一条目上过度投入时间。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section" id="faq" aria-labelledby="faq-title">
+        <div class="section-header">
+          <h2 id="faq-title">常见问答</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>都市情景短剧一般多久更新一集？</summary>
+            <div class="faq-answer">常见节奏为周更，部分条目采用双周更。周更条目通常固定在每周二或周四上线，双周更条目间隔 14 天左右。更新频率可在条目页或频道索引中查看具体标注。</div>
+          </details>
+          <details class="faq-item">
+            <summary>职场观察和都市情景的区别是什么？</summary>
+            <div class="faq-answer">职场观察聚焦工作场景中的具体沟通问题，如汇报、协作、绩效面谈，单集解决一个明确难点；都市情景侧重长期人物关系与生活规则冲突，如合租分摊、邻里噪音，需要连续观看才能理解人物动机。</div>
+          </details>
+          <details class="faq-item">
+            <summary>第一次看成年向短视频，从哪个条目开始比较好？</summary>
+            <div class="faq-answer">建议从单集独立、时长 3 分钟左右的幽默短剧入手，例如《电梯间尴尬学》，先适应节奏；再转向《合租议事厅》这类 8—10 分钟的都市情景，感受连续人物关系。两个类型都适应后，可进入职场观察与生活实验。</div>
+          </details>
+          <details class="faq-item">
+            <summary>生活实验类视频的预算数据可信吗？</summary>
+            <div class="faq-answer">可参考条目是否公开具体账单，包括菜价、交通费、临时支出与实验边界说明。若条目只给结论不展示过程，参考价值有限。建议对照自己所在城市的生活成本做调整，不直接照搬数字。</div>
+          </details>
+          <details class="faq-item">
+            <summary>幽默短剧和喜剧小品的评判标准有什么不同？</summary>
+            <div class="faq-answer">幽默短剧更依赖场景压缩和单集反转，要求 3—5 分钟内完成铺垫与笑点；喜剧小品通常有舞台调度和现场观众反馈，节奏更依赖表演停顿。两者对台词生活化的要求一致，但短剧更强调镜头内的信息密度。</div>
+          </details>
+          <details class="faq-item">
+            <summary>成年向短视频里经常出现的“合租规则”题材为什么受欢迎？</summary>
+            <div class="faq-answer">合租规则涉及水电分摊、卫生排班、访客边界等具体生活决策，成年观众容易代入自身经验。这类题材不需要复杂设定，靠对话和规则冲突就能推进剧情，制作门槛相对可控，因此成为都市情景的常见方向。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section" id="comments" aria-labelledby="comments-title">
+        <div class="section-header">
+          <h2 id="comments-title">用户评论</h2>
+          <span style="font-size:0.8rem;color:var(--text-muted);">12 条</span>
+        </div>
+        <div class="comment-list">
+          <div class="comment-item">
+            <div class="comment-user">老周不加班</div>
+            <div class="comment-text">《合租议事厅》第 9 集冰箱那段太真实了，我们合租也丢过酸奶，最后也是靠贴标签解决。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-user">小满在通勤</div>
+            <div class="comment-text">会议室别传第 5 集讲“如何拒绝临时加需求”，话术直接抄去用了，不过现实里对方不会那么配合。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-user">阿禾吃饭中</div>
+            <div class="comment-text">一百块过一周的账单挺细，但一线城市参考意义有限，菜价差太多了。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-user">电梯常客</div>
+            <div class="comment-text">电梯间尴尬学第 20 集遇到前同事那段，我上周刚经历，看完笑完又有点沉默。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-user">豆豆不是狗</div>
+            <div class="comment-text">晚饭桌辩论会话题选得不错，但长对话形式容易走神，我一般 1.25 倍速看。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-user">半页剧本</div>
+            <div class="comment-text">半包烟剧本室第 4 期讲通勤见闻提炼台词，对我写短剧挺有参考，就是更新太慢。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-user">西二旗租客</div>
+            <div class="comment-text">合租议事厅第 8 集访客留宿投票，我们真投过，最后不了了之，剧里至少有个结果。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-user">拿铁不加糖</div>
+            <div class="comment-text">职场观察类看多了有点累，每集都在解决问题，现实里更多是无解。不过制作确实认真。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-user">夜班公交</div>
+            <div class="comment-text">幽默短剧适合睡前看，三分钟一集不占脑子。都市情景反而要挑时间，不然看到一半被打断很难受。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-user">冰箱贴爱好者</div>
+            <div class="comment-text">一百块过一周第 14 集的三天伙食安排，我试着跟了两天，第三天就超支了，真实。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-user">会议室后排</div>
+            <div class="comment-text">会议室别传的台词写得比我司真实会议还自然，尤其“先拉个群”那句，条件反射想掏手机。</div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-user">慢慢看</div>
+            <div class="comment-text">希望多出点社交实验方向的，现在合租和职场比较多，边界类话题还能再挖。</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section" id="news" aria-labelledby="news-title">
+        <div class="section-header">
+          <h2 id="news-title">相关资讯</h2>
+        </div>
+        <div class="news-list">
+          <article class="news-item">
+            <img class="news-thumb" src="https://picsum.photos/seed/qiezi-news01/600/400" alt="合租议事厅第9集上线资讯配图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <div class="news-title">《合租议事厅》第 9 集上线，冰箱食物失踪案引合租规则讨论</div>
+              <div class="news-date">2026-11-08</div>
+              <p class="news-summary">本集围绕公共冰箱的食物归属展开，上线后引发关于合租标签制度的讨论。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img class="news-thumb" src="https://picsum.photos/seed/qiezi-news02/600/400" alt="会议室别传第6集预告资讯配图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <div class="news-title">《会议室别传》第 6 集预告发布，聚焦跨部门“甩锅”话术</div>
+              <div class="news-date">2026-11-06</div>
+              <p class="news-summary">预告片展示了三个典型推责句式，正片将于 11 月 12 日上线。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img class="news-thumb" src="https://picsum.photos/seed/qiezi-news03/600/400" alt="一百块过一周预算实验资讯配图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <div class="news-title">《一百块过一周》更新第 14 集，三天伙食账单公开</div>
+              <div class="news-date">2026-11-05</div>
+              <p class="news-summary">本集展示 100 元预算下的三餐搭配，结尾附完整采购清单与价格。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img class="news-thumb" src="https://picsum.photos/seed/qiezi-news04/600/400" alt="电梯间尴尬学第21集上线资讯配图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <div class="news-title">《电梯间尴尬学》第 21 集上线，便利店零钱对话成焦点</div>
+              <div class="news-date">2026-11-03</div>
+              <p class="news-summary">本集用 3 分钟还原结账时手机没电的尴尬场景，评论区出现大量类似经历。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img class="news-thumb" src="https://picsum.photos/seed/qiezi-news05/600/400" alt="半包烟剧本室编剧访谈资讯配图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <div class="news-title">《半包烟剧本室》第 4 期上线，编剧谈通勤见闻如何变成台词</div>
+              <div class="news-date">2026-11-01</div>
+              <p class="news-summary">本期嘉宾分享从地铁对话和便利店观察中提炼短剧台词的三个具体方法。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img class="news-thumb" src="https://picsum.photos/seed/qiezi-news06/600/400" alt="晚饭桌辩论会家庭话题资讯配图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <div class="news-title">《晚饭桌辩论会》第 11 集上线，探讨“为爱好花半个月工资”</div>
+              <div class="news-date">2026-10-29</div>
+              <p class="news-summary">本集用 12 分钟呈现两代人对兴趣消费的不同看法，话题引发家庭观众讨论。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="section" id="related" aria-labelledby="related-title">
+        <div class="section-header">
+          <h2 id="related-title">相关推荐</h2>
+        </div>
+        <div class="tag-index">
+          <a href="/#featured">合租规则短剧</a>
+          <a href="/#featured">会议室沟通话术</a>
+          <a href="/#featured">百元预算挑战</a>
+          <a href="/#featured">电梯社交尴尬</a>
+          <a href="/#featured">家庭饭桌对话</a>
+          <a href="/#featured">编剧台词拆解</a>
+          <a href="/#featured">消费决策记录</a>
+          <a href="/#featured">社交边界实验</a>
+        </div>
+      </section>
+
+      <!-- 11. 热门榜单 -->
+      <section class="section" id="ranking" aria-labelledby="ranking-title">
+        <div class="section-header">
+          <h2 id="ranking-title">热门榜单</h2>
+          <span style="font-size:0.8rem;color:var(--text-muted);">2026-11-08 更新</span>
+        </div>
+        <div class="rank-list">
+          <div class="rank-item">
+            <span class="rank-num top3">1</span>
+            <span class="rank-name">电梯间尴尬学</span>
+            <span class="rank-score">热度 8.9 · 第 21 集</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-num top3">2</span>
+            <span class="rank-name">合租议事厅</span>
+            <span class="rank-score">热度 8.7 · 第 9 集</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-num top3">3</span>
+            <span class="rank-name">会议室别传</span>
+            <span class="rank-score">热度 8.4 · 第 6 集</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-num">4</span>
+            <span class="rank-name">一百块过一周</span>
+            <span class="rank-score">热度 8.2 · 第 14 集</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-num">5</span>
+            <span class="rank-name">晚饭桌辩论会</span>
+            <span class="rank-score">热度 8.1 · 第 11 集</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-num">6</span>
+            <span class="rank-name">半包烟剧本室</span>
+            <span class="rank-score">热度 7.8 · 第 4 期</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右侧辅助栏 -->
+    <aside class="right-sidebar" aria-label="辅助信息">
+      <div class="sidebar-card">
+        <h3>更新节奏</h3>
+        <ul class="sidebar-list">
+          <li><span class="dot">·</span> 合租议事厅：每周二更新</li>
+          <li><span class="dot">·</span> 会议室别传：双周更，周三上线</li>
+          <li><span class="dot">·</span> 一百块过一周：每周五更新</li>
+          <li><span class="dot">·</span> 电梯间尴尬学：每周一、四更新</li>
+          <li><span class="dot">·</span> 晚饭桌辩论会：每周六更新</li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>类型速查</h3>
+        <ul class="sidebar-list">
+          <li><span class="dot">·</span> 都市情景：连续人物关系</li>
+          <li><span class="dot">·</span> 职场观察：单集沟通难题</li>
+          <li><span class="dot">·</span> 生活实验：预算与账单</li>
+          <li><span class="dot">·</span> 幽默短剧：3 分钟反转</li>
+          <li><span class="dot">·</span> 创作者专题：编剧拆解</li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>搜索提示</h3>
+        <ul class="sidebar-list">
+          <li><span class="dot">·</span> 输入“合租”查找情景类条目</li>
+          <li><span class="dot">·</span> 输入“职场”查找沟通类短剧</li>
+          <li><span class="dot">·</span> 输入“预算”查找生活实验</li>
+          <li><span class="dot">·</span> 输入“电梯”查找幽默短剧</li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- 页尾 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-text">茄子人成年短视频</div>
+        <p>聚合成年向情景短剧、职场观察与生活实验条目，提供类型解析与观看顺序参考。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容分类</h4>
+        <ul>
+          <li><a href="/#categories">都市情景</a></li>
+          <li><a href="/#categories">职场观察</a></li>
+          <li><a href="/#categories">生活实验</a></li>
+          <li><a href="/#categories">幽默短剧</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>浏览入口</h4>
+        <ul>
+          <li><a href="/#featured">精选条目</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#ranking">热门榜单</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>参考信息</h4>
+        <ul>
+          <li><a href="/#deep-dive">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 茄子人成年短视频内容聚合</span>
+      <span>部分内容为示例数据，仅用于展示页面结构</span>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      'use strict';
+
+      // 搜索功能：本地可见内容查找
+      const searchInput = document.getElementById('site-search');
+      const searchBtn = document.getElementById('search-btn');
+      const mainContent = document.getElementById('main-content');
+
+      function clearHighlights() {
+        const marks = mainContent.querySelectorAll('.search-highlight');
+        marks.forEach(function(mark) {
+          const parent = mark.parentNode;
+          if (parent) {
+            parent.replaceChild(document.createTextNode(mark.textContent), mark);
+            parent.normalize();
+          }
+        });
+      }
+
+      function highlightText(node, term) {
+        if (node.nodeType === 3 && node.textContent.trim()) {
+          const text = node.textContent;
+          const lowerText = text.toLowerCase();
+          const lowerTerm = term.toLowerCase();
+          const idx = lowerText.indexOf(lowerTerm);
+          if (idx !== -1) {
+            const range = document.createRange();
+            range.setStart(node, idx);
+            range.setEnd(node, idx + term.length);
+            const mark = document.createElement('mark');
+            mark.className = 'search-highlight';
+            range.surroundContents(mark);
+            return true;
+          }
+        } else if (node.nodeType === 1 && !['SCRIPT','STYLE','MARK'].includes(node.tagName)) {
+          let found = false;
+          const children = Array.from(node.childNodes);
+          for (let i = 0; i < children.length; i++) {
+            if (highlightText(children[i], term)) {
+              found = true;
+            }
+          }
+          return found;
+        }
+        return false;
+      }
+
+      function performSearch() {
+        const term = searchInput.value.trim();
+        clearHighlights();
+        // 移除已有的无结果提示
+        const existingMsg = document.getElementById('search-no-results');
+        if (existingMsg) existingMsg.remove();
+
+        if (!term) {
+          return;
+        }
+
+        // 先处理文本节点，避免在已标记区域内重复搜索
+        const walker = document.createTreeWalker(
+          mainContent,
+          NodeFilter.SHOW_TEXT,
+          {
+            acceptNode: function(node) {
+              if (node.parentElement && node.parentElement.closest('.search-highlight')) {
+                return NodeFilter.FILTER_REJECT;
+              }
+              if (!node.textContent.trim()) {
+                return NodeFilter.FILTER_REJECT;
+              }
+              return NodeFilter.FILTER_ACCEPT;
+            }
+          }
+        );
+
+        const textNodes = [];
+        while (walker.nextNode()) {
+          textNodes.push(walker.currentNode);
+        }
+
+        let foundAny = false;
+        textNodes.forEach(function(node) {
+          if (highlightText(node, term)) {
+            foundAny = true;
+          }
+        });
+
+        if (!foundAny) {
+          const msg = document.createElement('div');
+          msg.id = 'search-no-results';
+          msg.className = 'no-results visible';
+          msg.textContent = '未找到包含“' + term + '”的条目，请尝试“合租”“职场”“预算”“电梯”等其他词。';
+          mainContent.prepend(msg);
+        } else {
+          const firstMark = mainContent.querySelector('.search-highlight');
+          if (firstMark) {
+            firstMark.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }
+      }
+
+      searchBtn.addEventListener('click', performSearch);
+      searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          performSearch();
+        }
+      });
+
+      // 清除高亮当输入清空时
+      searchInput.addEventListener('input', function() {
+        if (!searchInput.value.trim()) {
+          clearHighlights();
+          const existingMsg = document.getElementById('search-no-results');
+          if (existingMsg) existingMsg.remove();
+        }
+      });
+    })();
+  </script>
+</body>
+  </html>
