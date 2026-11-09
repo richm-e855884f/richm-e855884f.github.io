@@ -1,0 +1,1165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>茄子短视频官方网站在线观看 - 短剧与生活短片聚合</title>
+<meta name="description" content="茄子短视频官方网站在线观看聚合都市短剧、悬疑微剧、美食探店、旅拍vlog与知识口播等短片内容，提供分集更新、题材分类、看点解析与观看顺序指南，适合用碎片时间追短剧和刷生活纪录片的观众。">
+<meta name="keywords" content="都市短剧分集,悬疑微剧解说,美食探店短片,旅拍vlog合集,知识口播内容">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%236c3ce0'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+:root{
+  --brand:#6c3ce0;
+  --brand-deep:#4a24a8;
+  --brand-soft:#efe9ff;
+  --accent:#ff6b3d;
+  --accent-soft:#fff0ea;
+  --gold:#ffb703;
+  --ink:#1c1730;
+  --ink-2:#453f5c;
+  --ink-3:#6f6889;
+  --line:#e6e1f2;
+  --bg:#f7f5fd;
+  --panel:#ffffff;
+  --panel-2:#fbfaff;
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 6px 24px rgba(72,40,150,.08);
+  --shadow-sm:0 2px 10px rgba(72,40,150,.06);
+  --sticky-h:104px;
+  --font:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-h)}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  line-height:1.75;font-size:15.5px;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .85em;padding-left:1.2em}
+li{margin-bottom:.35em}
+button{font-family:inherit;cursor:pointer}
+
+/* ============ 吸顶公告条 ============ */
+.notice-bar{
+  background:linear-gradient(90deg,var(--brand-deep),var(--brand) 60%,#8b5cf6);
+  color:#fff;font-size:13px;line-height:1.5;
+  position:sticky;top:0;z-index:60;
+  border-bottom:1px solid rgba(255,255,255,.15);
+}
+.notice-bar .nb-inner{
+  max-width:1360px;margin:0 auto;padding:7px 20px;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+}
+.nb-tag{
+  background:var(--gold);color:#3a2600;font-weight:700;font-size:11.5px;
+  padding:1px 8px;border-radius:20px;letter-spacing:.5px;white-space:nowrap;
+}
+.nb-list{display:flex;gap:18px;flex-wrap:wrap;opacity:.96}
+.nb-list span{white-space:nowrap}
+.nb-list b{color:var(--gold);font-weight:700}
+
+/* ============ 吸顶页头 ============ */
+.site-header{
+  position:sticky;top:32px;z-index:55;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 4px 18px rgba(72,40,150,.05);
+}
+.hd-inner{
+  max-width:1360px;margin:0 auto;padding:10px 20px;
+  display:flex;align-items:center;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand-mark{
+  width:42px;height:42px;border-radius:12px;flex-shrink:0;
+  background:linear-gradient(145deg,var(--brand),#9b6bff);
+  display:grid;place-items:center;box-shadow:0 4px 12px rgba(108,60,224,.3);
+}
+.brand-mark svg{width:22px;height:22px}
+.brand-text{font-size:18px;font-weight:800;letter-spacing:.5px;color:var(--brand-deep);white-space:nowrap}
+.brand-text small{display:block;font-size:10.5px;font-weight:500;color:var(--ink-3);letter-spacing:1.5px;line-height:1.2}
+
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;flex:1;min-width:0}
+.main-nav a{
+  font-size:13.5px;color:var(--ink-2);padding:5px 11px;border-radius:20px;
+  transition:.18s;white-space:nowrap;
+}
+.main-nav a:hover,.main-nav a:focus-visible{background:var(--brand-soft);color:var(--brand-deep);outline:none}
+.hd-search{
+  display:flex;align-items:center;gap:6px;flex-shrink:0;
+  background:var(--panel-2);border:1px solid var(--line);border-radius:22px;
+  padding:4px 6px 4px 14px;
+}
+.hd-search input{
+  border:none;background:transparent;outline:none;font-size:13px;width:140px;
+  color:var(--ink);font-family:inherit;
+}
+.hd-search input::placeholder{color:#a9a2c0}
+.hd-search button{
+  background:var(--brand);color:#fff;border:none;border-radius:18px;
+  font-size:12.5px;padding:5px 13px;transition:.18s;
+}
+.hd-search button:hover{background:var(--brand-deep)}
+.search-hint{
+  max-width:1360px;margin:0 auto;padding:0 20px;
+  font-size:12.5px;color:var(--accent);display:none;
+}
+.search-hint.on{display:block;padding-bottom:8px}
+
+/* ============ 布局容器：三栏门户 ============ */
+.wrap{max-width:1360px;margin:0 auto;padding:0 20px}
+.portal-grid{
+  display:grid;
+  grid-template-columns:176px minmax(0,1fr) 244px;
+  gap:22px;align-items:start;
+  padding-top:22px;
+}
+.channel-col{position:sticky;top:calc(var(--sticky-h) + 12px);}
+.side-col{position:sticky;top:calc(var(--sticky-h) + 12px);display:flex;flex-direction:column;gap:16px}
+@media(max-width:1100px){
+  .portal-grid{grid-template-columns:minmax(0,1fr) 260px}
+  .channel-col{
+    position:static;grid-column:1/-1;
+  }
+  .channel-col .panel{padding:0}
+}
+@media(max-width:820px){
+  .portal-grid{grid-template-columns:1fr;gap:18px}
+  .channel-col,.side-col{position:static;grid-column:auto}
+  .hd-search input{width:96px}
+  .main-nav{display:none}
+}
+
+/* ============ 通用面板 ============ */
+.panel{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-sm);padding:16px 18px;margin-bottom:18px;
+}
+.panel-tight{padding:12px 14px}
+.panel-title{
+  font-size:15px;font-weight:700;color:var(--ink);margin-bottom:12px;
+  display:flex;align-items:center;gap:8px;
+}
+.panel-title::before{
+  content:"";width:4px;height:15px;border-radius:2px;background:var(--brand);flex-shrink:0;
+}
+.side-panel .panel-title{font-size:14px}
+
+/* ============ 频道栏 ============ */
+.chan-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2px}
+.chan-list a{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:13.5px;color:var(--ink-2);padding:7px 10px;border-radius:var(--radius-sm);
+  transition:.15s;
+}
+.chan-list a:hover,.chan-list a:focus-visible{background:var(--brand-soft);color:var(--brand-deep);outline:none}
+.chan-list a .cnt{font-size:11.5px;color:var(--ink-3)}
+.chan-list a.active{background:var(--brand-soft);color:var(--brand-deep);font-weight:600}
+@media(max-width:1100px){
+  .chan-list{flex-direction:row;flex-wrap:wrap;gap:6px;overflow-x:auto;padding:10px 0}
+  .chan-list a{white-space:nowrap}
+}
+
+/* ============ 首屏 Hero ============ */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(125deg,#2a1552 0%,#4a24a8 45%,#7b3fe4 100%);
+  border-radius:var(--radius);color:#fff;padding:34px 32px 30px;
+  margin-bottom:20px;box-shadow:var(--shadow);
+}
+.hero::before{
+  content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;
+  border-radius:50%;background:radial-gradient(circle,rgba(255,183,3,.35),transparent 68%);
+}
+.hero::after{
+  content:"";position:absolute;left:-60px;bottom:-100px;width:260px;height:260px;
+  border-radius:50%;border:1px solid rgba(255,255,255,.14);
+}
+.hero-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;position:relative;z-index:2}
+.hero-badge{
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);
+  font-size:12px;padding:3px 11px;border-radius:20px;letter-spacing:.5px;
+}
+.hero h1{
+  font-size:clamp(24px,3.6vw,34px);letter-spacing:.5px;margin-bottom:12px;
+  position:relative;z-index:2;
+}
+.hero-desc{
+  max-width:640px;font-size:14.5px;line-height:1.8;color:rgba(255,255,255,.9);
+  margin-bottom:20px;position:relative;z-index:2;
+}
+.hero-desc b{color:var(--gold);font-weight:700}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:2}
+.btn-primary{
+  background:var(--gold);color:#3a2600;font-weight:700;font-size:14px;
+  padding:9px 20px;border-radius:24px;border:none;transition:.18s;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.btn-primary:hover{background:#ffc93c;transform:translateY(-1px)}
+.btn-ghost{
+  background:rgba(255,255,255,.1);color:#fff;font-size:14px;
+  padding:9px 20px;border-radius:24px;border:1px solid rgba(255,255,255,.3);transition:.18s;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+.hero-visual{
+  position:absolute;right:26px;top:50%;transform:translateY(-50%);
+  width:300px;height:190px;opacity:.95;pointer-events:none;z-index:1;
+}
+@media(max-width:1000px){.hero-visual{display:none}}
+@media(max-width:740px){.hero{padding:26px 20px}}
+
+/* ============ 概览 ============ */
+.overview-text{font-size:14.8px;color:var(--ink-2);line-height:1.85}
+.overview-text b{color:var(--brand-deep)}
+.stat-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.stat-chip{
+  background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:8px 14px;font-size:12.5px;color:var(--ink-3);flex:1;min-width:120px;
+}
+.stat-chip b{display:block;font-size:18px;color:var(--brand-deep);font-weight:800;line-height:1.3}
+
+/* ============ 精选卡片 ============ */
+.card-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;
+}
+.vcard{
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  background:var(--panel);transition:.2s;display:flex;flex-direction:column;
+}
+.vcard:hover{box-shadow:var(--shadow);transform:translateY(-2px);border-color:#d6c9f7}
+.vcard-cover{position:relative;aspect-ratio:4/3;overflow:hidden;background:#ece7f9}
+.vcard-cover img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.vcard:hover .vcard-cover img{transform:scale(1.05)}
+.vcard-badge{
+  position:absolute;top:8px;left:8px;background:rgba(42,21,82,.82);color:#fff;
+  font-size:11px;padding:2px 9px;border-radius:12px;backdrop-filter:blur(4px);
+}
+.vcard-ep{
+  position:absolute;bottom:8px;right:8px;background:rgba(255,255,255,.92);color:var(--brand-deep);
+  font-size:11px;font-weight:700;padding:1px 8px;border-radius:10px;
+}
+.vcard-body{padding:11px 13px 13px;display:flex;flex-direction:column;flex:1}
+.vcard-title{font-size:14.5px;font-weight:700;margin-bottom:6px;color:var(--ink)}
+.vcard-desc{font-size:12.8px;color:var(--ink-3);line-height:1.65;margin-bottom:9px;flex:1}
+.tag-row{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px}
+.tag{
+  font-size:11px;background:var(--brand-soft);color:var(--brand-deep);
+  padding:1.5px 8px;border-radius:10px;white-space:nowrap;
+}
+.tag.orange{background:var(--accent-soft);color:#c2410c}
+.vcard-meta{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:11.5px;color:var(--ink-3);border-top:1px dashed var(--line);padding-top:8px;
+}
+.vcard-meta .hot{color:var(--accent);font-weight:700}
+
+/* ============ 更新列表 ============ */
+.update-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column}
+.update-list li{
+  display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);
+  font-size:13.5px;margin:0;align-items:flex-start;
+}
+.update-list li:last-child{border-bottom:none;padding-bottom:0}
+.up-time{
+  flex-shrink:0;width:72px;font-size:11.5px;color:var(--brand);font-weight:600;
+  padding-top:2px;
+}
+.up-main{flex:1;min-width:0}
+.up-name{font-weight:700;color:var(--ink);font-size:13.8px}
+.up-note{color:var(--ink-3);font-size:12.6px;margin-top:1px}
+.up-flag{
+  flex-shrink:0;font-size:10.5px;padding:1px 7px;border-radius:9px;
+  background:var(--accent-soft);color:#c2410c;margin-top:2px;white-space:nowrap;
+}
+.up-flag.new{background:#e6f7ee;color:#0f7a45}
+
+/* ============ 分类入口 ============ */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+.cat-item{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 13px;
+  background:var(--panel-2);transition:.18s;display:block;
+}
+.cat-item:hover,.cat-item:focus-visible{
+  background:var(--brand-soft);border-color:#c9b6f5;outline:none;transform:translateY(-1px);
+}
+.cat-name{font-size:14px;font-weight:700;color:var(--ink);display:flex;justify-content:space-between;align-items:center;margin-bottom:3px}
+.cat-name span{font-size:11px;color:var(--brand);font-weight:600}
+.cat-desc{font-size:12px;color:var(--ink-3);line-height:1.6}
+
+/* ============ 深度解析 ============ */
+.deep-article h2{
+  font-size:19px;margin-bottom:6px;padding-bottom:0;
+}
+.deep-intro{font-size:14px;color:var(--ink-3);margin-bottom:18px}
+.deep-article h3{
+  font-size:16px;color:var(--brand-deep);margin:22px 0 9px;
+  padding-left:11px;border-left:4px solid var(--brand);line-height:1.4;
+}
+.deep-article p{font-size:14.6px;color:var(--ink-2);line-height:1.88;text-align:justify}
+.deep-article b{color:var(--brand-deep)}
+.cmp-table{
+  width:100%;border-collapse:collapse;font-size:13px;margin:10px 0 16px;
+  border-radius:var(--radius-sm);overflow:hidden;
+}
+.cmp-table th,.cmp-table td{
+  border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top;
+}
+.cmp-table th{background:var(--brand-soft);color:var(--brand-deep);font-weight:700;font-size:13px}
+.cmp-table td{color:var(--ink-2);line-height:1.65}
+.cmp-table tr:nth-child(even) td{background:var(--panel-2)}
+
+/* ============ 观看路径步骤 ============ */
+.steps{counter-reset:step;list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.steps li{
+  counter-increment:step;position:relative;padding-left:44px;margin:0;
+}
+.steps li::before{
+  content:counter(step);position:absolute;left:0;top:0;
+  width:30px;height:30px;border-radius:9px;background:var(--brand);color:#fff;
+  display:grid;place-items:center;font-weight:800;font-size:14px;
+  box-shadow:0 3px 9px rgba(108,60,224,.28);
+}
+.steps strong{display:block;font-size:14.2px;color:var(--ink);margin-bottom:2px}
+.steps span{font-size:13.2px;color:var(--ink-3);line-height:1.7;display:block}
+
+/* ============ FAQ ============ */
+.faq-list{display:flex;flex-direction:column;gap:8px}
+.faq-list details{
+  border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--panel-2);
+  overflow:hidden;
+}
+.faq-list summary{
+  padding:11px 14px;font-size:14px;font-weight:600;color:var(--ink);
+  cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;
+}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{
+  content:"+";font-size:17px;color:var(--brand);font-weight:400;flex-shrink:0;transition:.2s;
+}
+.faq-list details[open] summary::after{content:"−"}
+.faq-list details[open] summary{background:var(--brand-soft);color:var(--brand-deep)}
+.faq-ans{padding:0 14px 12px;font-size:13.5px;color:var(--ink-2);line-height:1.8}
+
+/* ============ 评论 ============ */
+.comment-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:11px}
+.cmt{
+  background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:11px 13px;font-size:13px;
+}
+.cmt-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;font-size:12px;font-weight:700;flex-shrink:0;
+}
+.cmt-nick{font-weight:700;font-size:12.6px;color:var(--ink)}
+.cmt-time{font-size:11px;color:var(--ink-3);margin-left:auto}
+.cmt-text{color:var(--ink-2);line-height:1.7;font-size:12.8px}
+.cmt-target{color:var(--brand);font-weight:600}
+
+/* ============ 资讯 ============ */
+.news-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}
+.news-list li{
+  display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);margin:0;
+}
+.news-list li:last-child{border-bottom:none;padding-bottom:0}
+.news-thumb{
+  width:96px;height:64px;border-radius:var(--radius-sm);object-fit:cover;flex-shrink:0;background:#ece7f9;
+}
+.news-body{flex:1;min-width:0}
+.news-title{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:3px}
+.news-title:hover{color:var(--brand)}
+.news-abs{font-size:12.5px;color:var(--ink-3);line-height:1.65;margin-bottom:3px}
+.news-date{font-size:11.5px;color:var(--brand);font-weight:600}
+
+/* ============ 相关推荐标签 ============ */
+.rel-tags{display:flex;flex-wrap:wrap;gap:7px}
+.rel-tags a{
+  font-size:12.5px;padding:5px 12px;border-radius:18px;background:var(--panel-2);
+  border:1px solid var(--line);color:var(--ink-2);transition:.18s;
+}
+.rel-tags a:hover,.rel-tags a:focus-visible{
+  background:var(--brand);color:#fff;border-color:var(--brand);outline:none;
+}
+.rel-list{list-style:none;padding:0;margin:0;font-size:13.2px}
+.rel-list li{padding:7px 0;border-bottom:1px dashed var(--line);margin:0;display:flex;gap:8px}
+.rel-list li:last-child{border-bottom:none}
+.rel-list .idx{color:var(--brand);font-weight:800;width:16px;flex-shrink:0}
+
+/* ============ 榜单 ============ */
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rk}
+.rank-list li{
+  counter-increment:rk;display:flex;gap:10px;align-items:center;
+  padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.2px;margin:0;
+}
+.rank-list li:last-child{border-bottom:none}
+.rank-list li::before{
+  content:counter(rk);width:20px;height:20px;border-radius:6px;flex-shrink:0;
+  display:grid;place-items:center;font-size:11.5px;font-weight:800;
+  background:var(--panel-2);color:var(--ink-3);
+}
+.rank-list li:nth-child(1)::before{background:var(--gold);color:#3a2600}
+.rank-list li:nth-child(2)::before{background:#c8c8d8;color:#2a2535}
+.rank-list li:nth-child(3)::before{background:#e8b98a;color:#4a2c10}
+.rank-name{flex:1;min-width:0;font-weight:600;color:var(--ink)}
+.rank-score{font-size:12px;color:var(--accent);font-weight:700;flex-shrink:0}
+
+/* ============ 侧栏小模块 ============ */
+.trend-list{list-style:none;padding:0;margin:0;font-size:13px;counter-reset:tr}
+.trend-list li{counter-increment:tr;display:flex;gap:8px;padding:6px 0;margin:0;align-items:flex-start}
+.trend-list li::before{
+  content:counter(tr);color:var(--brand);font-weight:800;font-size:12px;flex-shrink:0;width:14px;
+}
+.trend-list a{color:var(--ink-2);line-height:1.55}
+.trend-list a:hover{color:var(--brand)}
+.side-note{font-size:12px;color:var(--ink-3);line-height:1.7;margin:0}
+.side-figure{border-radius:var(--radius-sm);overflow:hidden;margin-bottom:8px}
+.side-figure img{width:100%;height:auto;object-fit:cover}
+
+/* ============ 页尾 ============ */
+.site-footer{
+  margin-top:32px;background:#1c1730;color:#b9b2d0;font-size:13px;
+}
+.ft-inner{max-width:1360px;margin:0 auto;padding:34px 20px 20px}
+.ft-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;margin-bottom:26px}
+@media(max-width:820px){.ft-top{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.ft-top{grid-template-columns:1fr}}
+.ft-brand{font-size:17px;font-weight:800;color:#fff;margin-bottom:8px}
+.ft-desc{font-size:12.5px;line-height:1.8;color:#9a92b5;margin:0}
+.ft-col h4{font-size:13.5px;color:#fff;margin-bottom:10px;font-weight:700}
+.ft-col a{display:block;font-size:12.5px;padding:3px 0;color:#a79fc4;transition:.15s}
+.ft-col a:hover{color:var(--gold)}
+.ft-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding-top:16px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12px;color:#877f9f;
+}
+.ft-disclaimer{font-size:11.5px;color:#7a7295;line-height:1.7}
+
+/* 通用焦点可见 */
+a:focus-visible,button:focus-visible,summary:focus-visible{
+  outline:2px solid var(--brand);outline-offset:2px;
+}
+.section-gap{margin-bottom:18px}
+.sec-head{
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  margin-bottom:12px;flex-wrap:wrap;
+}
+.sec-head h2{font-size:17.5px}
+.sec-head .more-link{font-size:12.5px;color:var(--brand);font-weight:600}
+.sec-head .more-link:hover{text-decoration:underline}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice-bar" role="region" aria-label="更新公告">
+  <div class="nb-inner">
+    <span class="nb-tag">今日更新</span>
+    <div class="nb-list">
+      <span>《晚风里的第八封信》第 <b>14</b> 集已上线</span>
+      <span>悬疑微剧 <b>4</b> 部新片入库</span>
+      <span>美食探店「夜宵地图」新增 <b>9</b> 条</span>
+    </div>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header">
+  <div class="hd-inner">
+    <a class="brand" href="/#" aria-label="茄子短视频官方网站在线观看 首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M11 8l13 8-13 8z" fill="#ffd166"/>
+          <circle cx="25" cy="9" r="2.4" fill="#ff6b3d"/>
+        </svg>
+      </span>
+      <span class="brand-text">茄子短视频官方网站在线观看<small>SHORT VIDEO</small></span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="/#overview">平台概览</a>
+      <a href="/#featured">精选短片</a>
+      <a href="/#updates">分集更新</a>
+      <a href="/#category">题材分类</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">观看路径</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#rank">热门榜单</a>
+    </nav>
+    <form class="hd-search" role="search" onsubmit="return false">
+      <input id="siteSearch" type="search" placeholder="搜条目 / 题材" aria-label="站内内容查找">
+      <button type="button" id="searchBtn">查找</button>
+    </form>
+  </div>
+  <div class="search-hint" id="searchHint" role="status" aria-live="polite"></div>
+</header>
+
+<main class="wrap">
+  <div class="portal-grid">
+
+    <!-- 左频道索引 -->
+    <aside class="channel-col" aria-label="频道索引">
+      <div class="panel panel-tight" id="channels">
+        <h2 class="panel-title">频道索引</h2>
+        <ul class="chan-list">
+          <li><a href="/#featured" class="active">都市短剧 <span class="cnt">126</span></a></li>
+          <li><a href="/#featured">悬疑微剧 <span class="cnt">88</span></a></li>
+          <li><a href="/#featured">古装轻喜 <span class="cnt">64</span></a></li>
+          <li><a href="/#featured">美食探店 <span class="cnt">142</span></a></li>
+          <li><a href="/#featured">旅拍vlog <span class="cnt">97</span></a></li>
+          <li><a href="/#featured">知识口播 <span class="cnt">73</span></a></li>
+          <li><a href="/#featured">亲子日常 <span class="cnt">51</span></a></li>
+          <li><a href="/#featured">运动健身 <span class="cnt">45</span></a></li>
+          <li><a href="/#updates">分集追更 <span class="cnt">—</span></a></li>
+          <li><a href="/#deep">解说拆片 <span class="cnt">—</span></a></li>
+        </ul>
+      </div>
+      <div class="panel panel-tight side-panel" style="margin-top:0">
+        <h2 class="panel-title">本周热词</h2>
+        <ul class="trend-list">
+          <li><a href="/#featured">晚风里的第八封信</a></li>
+          <li><a href="/#featured">雾港疑云</a></li>
+          <li><a href="/#featured">夜宵地图·城南篇</a></li>
+          <li><a href="/#featured">一个人骑车去大理</a></li>
+          <li><a href="/#featured">三分钟讲透通货膨胀</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- 中主内容 -->
+    <div class="main-col">
+
+      <!-- 首屏 -->
+      <section class="hero" aria-labelledby="pageTitle">
+        <div class="hero-top">
+          <span class="hero-badge">短片聚合 · 分集追更</span>
+          <span class="hero-badge">11 月 8 日更新</span>
+        </div>
+        <h1 id="pageTitle">茄子短视频官方网站在线观看</h1>
+        <p class="hero-desc">
+          这里汇聚的是<b>都市短剧、悬疑微剧、古装轻喜剧、美食探店、旅拍vlog 与知识口播</b>六类短片内容，
+          按题材分频道、按集数标进度，标注每部片子的看点、时长与更新节奏，方便你在通勤、午休和三餐间隙挑到能一口气看下去的那一条。
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="/#featured">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            进入精选短片
+          </a>
+          <a class="btn-ghost" href="/#updates">查看今日分集更新</a>
+          <a class="btn-ghost" href="/#guide">按观看顺序挑片</a>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 300 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="26" width="120" height="76" rx="10" fill="rgba(255,255,255,.13)" stroke="rgba(255,255,255,.25)"/>
+            <rect x="18" y="36" width="46" height="8" rx="4" fill="rgba(255,255,255,.5)"/>
+            <rect x="18" y="52" width="86" height="5" rx="2.5" fill="rgba(255,255,255,.28)"/>
+            <rect x="18" y="63" width="68" height="5" rx="2.5" fill="rgba(255,255,255,.28)"/>
+            <circle cx="98" cy="80" r="11" fill="#ffd166"/>
+            <path d="M94 75l9 5.5-9 5.5z" fill="#4a24a8"/>
+            <rect x="140" y="8" width="152" height="92" rx="12" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.22)"/>
+            <circle cx="168" cy="38" r="13" fill="rgba(255,209,102,.9)"/>
+            <rect x="190" y="28" width="88" height="7" rx="3.5" fill="rgba(255,255,255,.55)"/>
+            <rect x="190" y="42" width="62" height="6" rx="3" fill="rgba(255,255,255,.3)"/>
+            <rect x="154" y="62" width="124" height="6" rx="3" fill="rgba(255,255,255,.22)"/>
+            <rect x="154" y="76" width="94" height="6" rx="3" fill="rgba(255,255,255,.22)"/>
+            <rect x="8" y="118" width="284" height="60" rx="12" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.18)"/>
+            <circle cx="40" cy="148" r="17" fill="rgba(255,107,61,.85)"/>
+            <path d="M36 141l11 7-11 7z" fill="#fff"/>
+            <rect x="70" y="134" width="92" height="7" rx="3.5" fill="rgba(255,255,255,.5)"/>
+            <rect x="70" y="150" width="140" height="6" rx="3" fill="rgba(255,255,255,.22)"/>
+            <rect x="236" y="134" width="44" height="26" rx="9" fill="rgba(255,209,102,.28)" stroke="rgba(255,209,102,.6)"/>
+            <rect x="244" y="145" width="28" height="4" rx="2" fill="#ffd166"/>
+          </svg>
+        </div>
+      </section>
+
+      <!-- 1 主题领域概览 -->
+      <section class="panel section-gap" id="overview" aria-labelledby="overview-h">
+        <div class="sec-head"><h2 class="panel-title" id="overview-h" style="margin-bottom:0">短片内容的方向与当下看点</h2></div>
+        <div class="overview-text">
+          <p>
+            短片内容大致沿两条线索铺开：一条是<b>有连续剧情的分集短剧</b>，单集多在 2—8 分钟，用十几集讲完一个完整故事，都市情感、悬疑推理、古装轻喜是三条最常被点开的赛道；
+            另一条是<b>单条独立的纪实类短片</b>，美食探店、城市旅拍、知识口播、运动跟练都属于这一类，每条自成一个话题，不依赖前后集。
+          </p>
+          <p>
+            剧情向内容看的是节奏与钩子。像《晚风里的第八封信》把一封错投的信拆成十四集慢慢揭开，每集结尾都留一个未解的小问题；
+            悬疑方向的《雾港疑云》则靠时间线错位制造信息差，观众需要自己把碎片拼回去。纪实向内容更看具体场景：
+            《夜宵地图·城南篇》把镜头放在凌晨两点的烧烤摊与糖水铺，讲的是摊主的作息与成本，而不是单纯拍食物。
+          </p>
+          <p>
+            选择时可以先看时长和集数：想一口气看完就挑 10—15 集的完结短剧，想零散看就选单条纪实片。再看更新状态，连载中的片子适合每天追一集，
+            已完结的适合周末连刷。最后看类型标签是否与当下心情对得上——累的时候看轻喜剧和美食，注意力集中时再看悬疑和知识类。
+          </p>
+        </div>
+        <div class="stat-row">
+          <div class="stat-chip"><b>6</b>内容方向</div>
+          <div class="stat-chip"><b>10—15</b>常见单剧集数</div>
+          <div class="stat-chip"><b>2—8</b>分钟单集时长</div>
+          <div class="stat-chip"><b>2026-11-08</b>更新基准日</div>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="section-gap" id="featured" aria-labelledby="featured-h">
+        <div class="sec-head">
+          <h2 id="featured-h">精选短片推荐</h2>
+          <a class="more-link" href="/#updates">查看今日更新 →</a>
+        </div>
+        <div class="card-grid">
+
+          <article class="vcard">
+            <div class="vcard-cover">
+              <img src="https://picsum.photos/seed/wanfeng-shuxin14/400/300" alt="晚风里的第八封信短剧封面" width="400" height="300" loading="lazy">
+              <span class="vcard-badge">都市情感</span>
+              <span class="vcard-ep">全 14 集</span>
+            </div>
+            <div class="vcard-body">
+              <h3 class="vcard-title">晚风里的第八封信</h3>
+              <div class="tag-row"><span class="tag">错位信件</span><span class="tag">小城叙事</span><span class="tag orange">完结</span></div>
+              <p class="vcard-desc">一封寄错地址的信牵出两代人的旧事，每集用一封信推进一段关系，结尾三集集中回收伏笔。适合喜欢慢节奏情感线的观众。</p>
+              <div class="vcard-meta"><span class="hot">热度 98.2万</span><span>评分 8.9</span></div>
+            </div>
+          </article>
+
+          <article class="vcard">
+            <div class="vcard-cover">
+              <img src="https://picsum.photos/seed/wugang-yiyun07/400/300" alt="雾港疑云悬疑微剧封面" width="400" height="300" loading="lazy">
+              <span class="vcard-badge">悬疑推理</span>
+              <span class="vcard-ep">更新至 9 集</span>
+            </div>
+            <div class="vcard-body">
+              <h3 class="vcard-title">雾港疑云</h3>
+              <div class="tag-row"><span class="tag">时间线错位</span><span class="tag">港城旧案</span><span class="tag orange">连载中</span></div>
+              <p class="vcard-desc">三条时间线交替推进一桩十年前的沉船案，画面里反复出现的蓝色雨衣是关键线索。适合边看边记笔记的推理爱好者。</p>
+              <div class="vcard-meta"><span class="hot">热度 86.5万</span><span>评分 8.6</span></div>
+            </div>
+          </article>
+
+          <article class="vcard">
+            <div class="vcard-cover">
+              <img src="https://picsum.photos/seed/yexiao-nancheng03/400/300" alt="夜宵地图城南篇美食探店封面" width="400" height="300" loading="lazy">
+              <span class="vcard-badge">美食探店</span>
+              <span class="vcard-ep">已更 12 条</span>
+            </div>
+            <div class="vcard-body">
+              <h3 class="vcard-title">夜宵地图·城南篇</h3>
+              <div class="tag-row"><span class="tag">凌晨摊位</span><span class="tag">摊主故事</span><span class="tag">成本账</span></div>
+              <p class="vcard-desc">镜头对准凌晨两点的烧烤摊、糖水铺与炒粉档，除了吃什么，更记录摊主的备货时间、房租与一家人怎么轮班。</p>
+              <div class="vcard-meta"><span class="hot">热度 74.1万</span><span>评分 8.7</span></div>
+            </div>
+          </article>
+
+          <article class="vcard">
+            <div class="vcard-cover">
+              <img src="https://picsum.photos/seed/qiche-dali11/400/300" alt="一个人骑车去大理旅拍vlog封面" width="400" height="300" loading="lazy">
+              <span class="vcard-badge">旅拍vlog</span>
+              <span class="vcard-ep">全 8 条</span>
+            </div>
+            <div class="vcard-body">
+              <h3 class="vcard-title">一个人骑车去大理</h3>
+              <div class="tag-row"><span class="tag">长途骑行</span><span class="tag">装备清单</span><span class="tag">沿途住宿</span></div>
+              <p class="vcard-desc">从昆明到大理分八段记录，每集交代当天里程、爬升和住宿价格，遇到爆胎与逆风也不剪掉，路线可照着走。</p>
+              <div class="vcard-meta"><span class="hot">热度 61.8万</span><span>评分 8.4</span></div>
+            </div>
+          </article>
+
+          <article class="vcard">
+            <div class="vcard-cover">
+              <img src="https://picsum.photos/seed/tonghuo-pengzhang05/400/300" alt="三分钟讲透通货膨胀知识口播封面" width="400" height="300" loading="lazy">
+              <span class="vcard-badge">知识口播</span>
+              <span class="vcard-ep">已更 21 条</span>
+            </div>
+            <div class="vcard-body">
+              <h3 class="vcard-title">三分钟讲透通货膨胀</h3>
+              <div class="tag-row"><span class="tag">经济学入门</span><span class="tag">白板讲解</span><span class="tag">生活例子</span></div>
+              <p class="vcard-desc">用菜市场、房租和工资三条线解释通胀怎么落到日常开销上，每集只讲一个概念，配白板手绘图，适合零基础。</p>
+              <div class="vcard-meta"><span class="hot">热度 58.3万</span><span>评分 9.0</span></div>
+            </div>
+          </article>
+
+          <article class="vcard">
+            <div class="vcard-cover">
+              <img src="https://picsum.photos/seed/guzhuang-qingxi09/400/300" alt="换了身份来见你古装轻喜剧封面" width="400" height="300" loading="lazy">
+              <span class="vcard-badge">古装轻喜</span>
+              <span class="vcard-ep">全 12 集</span>
+            </div>
+            <div class="vcard-body">
+              <h3 class="vcard-title">换了身份来见你</h3>
+              <div class="tag-row"><span class="tag">身份错换</span><span class="tag">市井喜剧</span><span class="tag orange">完结</span></div>
+              <p class="vcard-desc">大小姐与账房先生互换身份查账，闹出一串误会。台词密度高，包袱集中在第 4 到 7 集，适合吃饭时看。</p>
+              <div class="vcard-meta"><span class="hot">热度 52.7万</span><span>评分 8.2</span></div>
+            </div>
+          </article>
+
+          <article class="vcard">
+            <div class="vcard-cover">
+              <img src="https://picsum.photos/seed/qingzi-richang02/400/300" alt="带娃的第七百三十天亲子日常封面" width="400" height="300" loading="lazy">
+              <span class="vcard-badge">亲子日常</span>
+              <span class="vcard-ep">已更 36 条</span>
+            </div>
+            <div class="vcard-body">
+              <h3 class="vcard-title">带娃的第七百三十天</h3>
+              <div class="tag-row"><span class="tag">双职工家庭</span><span class="tag">作息记录</span><span class="tag">幼儿园</span></div>
+              <p class="vcard-desc">记录一对双职工夫妻如何排班接送、做饭和哄睡，具体到几点起床、几点备菜，没有滤镜式的育儿表演。</p>
+              <div class="vcard-meta"><span class="hot">热度 44.6万</span><span>评分 8.5</span></div>
+            </div>
+          </article>
+
+          <article class="vcard">
+            <div class="vcard-cover">
+              <img src="https://picsum.photos/seed/shenti-fangong06/400/300" alt="下班后二十分钟跟练运动健身封面" width="400" height="300" loading="lazy">
+              <span class="vcard-badge">运动健身</span>
+              <span class="vcard-ep">已更 18 条</span>
+            </div>
+            <div class="vcard-body">
+              <h3 class="vcard-title">下班后二十分钟跟练</h3>
+              <div class="tag-row"><span class="tag">无器械</span><span class="tag">居家训练</span><span class="tag">拉伸放松</span></div>
+              <p class="vcard-desc">每条固定热身五分钟、主训练十分钟、拉伸五分钟，动作有替代版本，膝盖不适也能跟上。</p>
+              <div class="vcard-meta"><span class="hot">热度 39.2万</span><span>评分 8.3</span></div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="panel section-gap" id="updates" aria-labelledby="updates-h">
+        <div class="sec-head"><h2 class="panel-title" id="updates-h" style="margin-bottom:0">今日分集更新与动态</h2></div>
+        <ul class="update-list">
+          <li><span class="up-time">今天 09:30</span><div class="up-main"><div class="up-name">晚风里的第八封信</div><div class="up-note">第 14 集大结局上线，最后两封信的来源交代完毕</div></div><span class="up-flag new">完结</span></li>
+          <li><span class="up-time">今天 10:15</span><div class="up-main"><div class="up-name">雾港疑云</div><div class="up-note">第 9 集更新，蓝色雨衣的主人在监控里首次出现正脸</div></div><span class="up-flag">更新</span></li>
+          <li><span class="up-time">今天 11:00</span><div class="up-main"><div class="up-name">夜宵地图·城南篇</div><div class="up-note">新增「桥下炒粉档」一条，记录了摊主凌晨三点的收摊流程</div></div><span class="up-flag">新条目</span></li>
+          <li><span class="up-time">今天 12:20</span><div class="up-main"><div class="up-name">三分钟讲透通货膨胀</div><div class="up-note">第 21 条上线，主题是「工资涨了为什么还是不够花」</div></div><span class="up-flag new">新条目</span></li>
+          <li><span class="up-time">今天 14:05</span><div class="up-main"><div class="up-name">换了身份来见你</div><div class="up-note">全 12 集整理为合集，补齐了第 6 集缺失的三分钟片段</div></div><span class="up-flag">修复</span></li>
+          <li><span class="up-time">昨天 20:40</span><div class="up-main"><div class="up-name">一个人骑车去大理</div><div class="up-note">第 8 条上线，到达大理古城，附全程里程与费用汇总</div></div><span class="up-flag new">完结</span></li>
+          <li><span class="up-time">昨天 19:10</span><div class="up-main"><div class="up-name">带娃的第七百三十天</div><div class="up-note">更新第 36 条，幼儿园冬季作息调整后的接送排班</div></div><span class="up-flag">更新</span></li>
+          <li><span class="up-time">11 月 6 日</span><div class="up-main"><div class="up-name">下班后二十分钟跟练</div><div class="up-note">新增「久坐肩颈」专辑，共 4 条，单条 18 分钟</div></div><span class="up-flag">新专辑</span></li>
+          <li><span class="up-time">11 月 5 日</span><div class="up-main"><div class="up-name">雾港疑云</div><div class="up-note">官方发布第 1—9 集时间线对照图，标注了三条叙事线节点</div></div><span class="up-flag">资料</span></li>
+          <li><span class="up-time">11 月 3 日</span><div class="up-main"><div class="up-name">夜宵地图·城南篇</div><div class="up-note">「糖水铺母女」一条播放破 30 万，评论区补充了营业时间</div></div><span class="up-flag">热议</span></li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="panel section-gap" id="category" aria-labelledby="category-h">
+        <div class="sec-head"><h2 class="panel-title" id="category-h" style="margin-bottom:0">按题材找短片</h2></div>
+        <div class="cat-grid">
+          <a class="cat-item" href="/#featured"><div class="cat-name">都市短剧 <span>126</span></div><div class="cat-desc">职场、婚姻、小城生活，单集 3—8 分钟</div></a>
+          <a class="cat-item" href="/#featured"><div class="cat-name">悬疑微剧 <span>88</span></div><div class="cat-desc">时间线错位、旧案重查、反转密集</div></a>
+          <a class="cat-item" href="/#featured"><div class="cat-name">古装轻喜 <span>64</span></div><div class="cat-desc">身份错换、市井喜剧、台词包袱多</div></a>
+          <a class="cat-item" href="/#featured"><div class="cat-name">美食探店 <span>142</span></div><div class="cat-desc">夜宵摊、老字号、摊主经营实录</div></a>
+          <a class="cat-item" href="/#featured"><div class="cat-name">旅拍vlog <span>97</span></div><div class="cat-desc">骑行、徒步、城市漫游与装备清单</div></a>
+          <a class="cat-item" href="/#featured"><div class="cat-name">知识口播 <span>73</span></div><div class="cat-desc">经济学入门、生活常识、白板讲解</div></a>
+          <a class="cat-item" href="/#featured"><div class="cat-name">亲子日常 <span>51</span></div><div class="cat-desc">双职工带娃、作息安排、幼儿园适应</div></a>
+          <a class="cat-item" href="/#featured"><div class="cat-name">运动健身 <span>45</span></div><div class="cat-desc">无器械跟练、居家训练、拉伸放松</div></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="panel section-gap deep-article" id="deep" aria-labelledby="deep-h">
+        <h2 id="deep-h">短剧与纪实短片：类型差异与判断维度</h2>
+        <p class="deep-intro">同样是几分钟一条的内容，剧情向短剧和纪实向短片在结构、判断标准和观看方式上差别很大。下面按类型拆开讲，方便挑片时先对号入座。</p>
+
+        <h3>剧情短剧：用集数节奏替代时长</h3>
+        <p>
+          剧情短剧把传统电视剧的叙事压缩进十几集、每集几分钟的框架里，核心变化是<b>钩子前置</b>。第一集前 30 秒必须交代冲突，
+          第二集开始每集结尾留一个悬念。《晚风里的第八封信》的做法是每集用一封信推进一段关系，观众看完一集能获得一个完整的小信息，
+          但整条主线要到第 12 集才开始收束。这种「单集自洽、整体递进」的结构，是判断一部短剧是否耐看的重要依据。
+        </p>
+        <p>
+          相反，《雾港疑云》走的是<b>信息延迟</b>路线：三条时间线交替出现，观众在前三集拿不到完整背景，需要自己记住每集出现的时间戳和物件。
+          这类片子对注意力要求更高，适合一次连看三到四集，零散地看容易丢失线索。判断自己适不适合，可以先看第 1 集，
+          如果看完能复述出两个以上未解问题，说明这种叙事对你有效。
+        </p>
+
+        <h3>纪实短片：场景与信息的密度</h3>
+        <p>
+          美食探店、旅拍vlog、知识口播都属于单条独立的纪实内容，判断标准与剧情片不同，重点看<b>信息密度</b>和<b>可复用性</b>。
+          《夜宵地图·城南篇》之所以值得看，是因为它在拍食物的同时记录了摊主的备货时间、房租和轮班安排，这些信息可以迁移到其他摊位去理解；
+          《一个人骑车去大理》每集交代当天里程、爬升和住宿价格，观众能照着规划自己的路线，这就是可复用性。
+        </p>
+        <p>
+          知识口播则看解释是否落到具体场景。《三分钟讲透通货膨胀》没有停在定义上，而是用菜市场、房租、工资三条线说明通胀怎么影响日常开销，
+          每集只讲一个概念，看完能立刻对应到自己的账单。如果一条知识短片通篇是术语堆叠、没有生活例子，通常不值得反复看。
+        </p>
+
+        <h3>四类内容的对比维度</h3>
+        <table class="cmp-table">
+          <thead>
+            <tr><th>维度</th><th>都市 / 悬疑短剧</th><th>美食探店</th><th>旅拍vlog</th><th>知识口播</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>单条时长</td><td>3—8 分钟</td><td>4—10 分钟</td><td>6—15 分钟</td><td>2—5 分钟</td></tr>
+            <tr><td>是否连载</td><td>是，10—15 集</td><td>否，单条独立</td><td>多为系列</td><td>多为系列</td></tr>
+            <tr><td>核心判断点</td><td>钩子密度、伏笔回收</td><td>摊主信息、成本细节</td><td>路线可复制性</td><td>概念是否落地</td></tr>
+            <tr><td>适合场景</td><td>周末连刷</td><td>饭点前后</td><td>出行前做功课</td><td>通勤、睡前</td></tr>
+            <tr><td>常见坑</td><td>结尾仓促、线索断裂</td><td>只拍食物不拍经营</td><td>只拍风景不给数据</td><td>术语堆叠无例子</td></tr>
+          </tbody>
+        </table>
+
+        <h3>轻喜剧与亲子、健身类内容的取舍</h3>
+        <p>
+          《换了身份来见你》属于典型的古装轻喜剧，判断它好不好看主要看<b>包袱分布</b>：前 3 集建立人物关系，第 4 到 7 集集中抖包袱，
+          第 8 集之后转入情感线。如果包袱集中在后半段，前面容易劝退；如果每集都有两三个笑点，就适合吃饭时随手点开。
+        </p>
+        <p>
+          《带娃的第七百三十天》和《下班后二十分钟跟练》属于功能性更强的内容。前者的价值在于具体作息安排——几点起床、几点备菜、谁接送，
+          这些细节对同样双职工的家庭有参考意义；后者看的是动作是否有替代版本、热身和拉伸是否完整，单条 20 分钟以内、无需器械的更适合居家坚持。
+        </p>
+
+        <h3>连载与完结的选择策略</h3>
+        <p>
+          连载中的片子适合每天追一集，但要注意更新节奏是否稳定。像《雾港疑云》目前更新到第 9 集，若每周固定两更，追起来压力不大；
+          若更新间隔不定，容易忘记前情，建议等完结再连刷。已完结的《晚风里的第八封信》《换了身份来见你》适合周末一次看完，
+          总时长分别约 90 分钟和 70 分钟，正好是一个晚上的量。
+        </p>
+        <p>
+          纪实类内容则不必等完结，按主题挑单条即可。想了解某个城市的夜宵生态，就先看《夜宵地图·城南篇》里摊位类型最全的几条；
+          想规划骑行路线，就按《一个人骑车去大理》的分段顺序看，每段对应一天的里程。把「先看什么」和「什么时候看」分开决定，比按热度排序更省时间。
+        </p>
+      </section>
+
+      <!-- 6 观看路径 -->
+      <section class="panel section-gap" id="guide" aria-labelledby="guide-h">
+        <div class="sec-head"><h2 class="panel-title" id="guide-h" style="margin-bottom:0">挑片与观看顺序指南</h2></div>
+        <ol class="steps">
+          <li><strong>先定时长</strong><span>只有十几分钟就选单条纪实片，美食或知识口播都合适；有整晚时间再开 10—15 集的短剧，避免看到一半被迫中断。</span></li>
+          <li><strong>再定类型</strong><span>想被剧情牵着走就选悬疑微剧，想放松就选古装轻喜或美食探店；注意力不集中时不要开时间线复杂的片子。</span></li>
+          <li><strong>看更新状态</strong><span>连载中的片子确认更新节奏是否稳定，间隔超过一周的建议等完结；已完结的可以直接连刷，不用记前情。</span></li>
+          <li><strong>用第一集做判断</strong><span>短剧看第 1 集能否在前 30 秒给出冲突，纪实片看第 1 条是否给出可复用的具体信息，两者都不行就换下一部。</span></li>
+          <li><strong>比较同类条目</strong><span>同题材至少看两部再决定追哪部。比如悬疑方向对比《雾港疑云》的线索密度，美食方向对比摊主信息的详略。</span></li>
+          <li><strong>安排追更节奏</strong><span>连载片固定每天一集或每周两集，避免一次刷完导致后续断档；纪实片按主题攒三五条，通勤时集中看。</span></li>
+        </ol>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="panel section-gap" id="faq" aria-labelledby="faq-h">
+        <div class="sec-head"><h2 class="panel-title" id="faq-h" style="margin-bottom:0">常见问答</h2></div>
+        <div class="faq-list">
+          <details>
+            <summary>都市短剧一般多久更新一集？</summary>
+            <div class="faq-ans">常见节奏是每周更新两到三集，单集 3—8 分钟。像《晚风里的第八封信》是每周二、周五各更一集，共 14 集，约七周完结。也有一次放出全集的完结剧，适合连刷。追更前先看更新说明里的固定档期，比看单集发布时间更可靠。</div>
+          </details>
+          <details>
+            <summary>悬疑微剧和普通短剧有什么区别？</summary>
+            <div class="faq-ans">主要差别在信息给出方式。普通短剧每集交代清楚前因后果，观众跟着走即可；悬疑微剧会故意延迟信息，用时间线错位、重复物件制造疑问，比如《雾港疑云》里的蓝色雨衣在前三集反复出现但不解释。看悬疑微剧建议一次连看三到四集，零散看容易丢线索。</div>
+          </details>
+          <details>
+            <summary>第一次接触短剧，从哪一部开始看比较好？</summary>
+            <div class="faq-ans">可以从已完结、集数在 12 集以内的轻喜剧或都市情感剧入手，比如《换了身份来见你》，单集包袱密集、人物关系简单，70 分钟左右能看完。看完再尝试悬疑方向，接受度会更高。如果更习惯纪实内容，也可以先从美食探店或知识口播练手。</div>
+          </details>
+          <details>
+            <summary>美食探店短片怎么判断值不值得看？</summary>
+            <div class="faq-ans">看它是否给了可复用的具体信息：营业时间、人均价格、摊主的备货流程、房租与人力成本。只拍食物特写、不交代经营细节的，通常看一条就够。《夜宵地图·城南篇》里「桥下炒粉档」一条记录了凌晨三点的收摊流程，这类信息才值得反复参考。</div>
+          </details>
+          <details>
+            <summary>旅拍vlog里的路线真的能照着走吗？</summary>
+            <div class="faq-ans">要看它有没有给出里程、爬升、住宿价格和补给点。《一个人骑车去大理》每集交代当天里程与住宿费用，遇到爆胎和逆风也不剪掉，这类内容参考价值较高。只拍风景、不给数据的 vlog 更适合当氛围片看，不适合直接规划行程。</div>
+          </details>
+          <details>
+            <summary>知识口播类短片看多了有用吗？</summary>
+            <div class="faq-ans">关键看每条是否只讲一个概念并落到生活场景。《三分钟讲透通货膨胀》用菜市场、房租、工资三条线解释，看完能对应到自己的开销，这种可以反复看。如果一条片子里塞了五六个术语却没有例子，看完很难记住，价值有限。建议按主题攒几条一起看，比零散刷更有效。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="panel section-gap" id="comments" aria-labelledby="comments-h">
+        <div class="sec-head"><h2 class="panel-title" id="comments-h" style="margin-bottom:0">观众评论</h2></div>
+        <div class="comment-grid">
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#6c3ce0">林</span><span class="cmt-nick">林间小满</span><span class="cmt-time">今天 10:42</span></div><div class="cmt-text">《晚风里的第八封信》结局那两封信的对照做得挺细，前面埋的邮戳细节真的用上了。就是第 11 集节奏有点拖。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#ff6b3d">周</span><span class="cmt-nick">周末不加班</span><span class="cmt-time">今天 09:58</span></div><div class="cmt-text">雾港疑云看到第 9 集才把雨衣主人放出来，前面八集我记线索记到手机备忘录里了，累但确实好看。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#0f7a45">陈</span><span class="cmt-nick">陈师傅的锅</span><span class="cmt-time">今天 09:15</span></div><div class="cmt-text">夜宵地图那个炒粉档我常去，片子里说的凌晨三点收摊是真的，摊主一家人轮班也是真的，拍得挺实在。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#c2410c">阿</span><span class="cmt-nick">阿柚不吃香菜</span><span class="cmt-time">昨天 22:31</span></div><div class="cmt-text">骑车去大理那系列我照着走了前两段，里程数基本对得上，就是第二段住宿价格比片子里涨了一点。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#4a24a8">半</span><span class="cmt-nick">半杯冷萃</span><span class="cmt-time">昨天 21:10</span></div><div class="cmt-text">通货膨胀那系列适合通勤听，每集三分钟刚好一站地铁。白板图比纯口播好记。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#8b5cf6">小</span><span class="cmt-nick">小满的猫</span><span class="cmt-time">昨天 20:05</span></div><div class="cmt-text">换了身份来见你的笑点集中在第 4 到 7 集，后面转感情线有点猝不及防，不过整体还是下饭。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#0f7a45">大</span><span class="cmt-nick">大李同学</span><span class="cmt-time">昨天 18:47</span></div><div class="cmt-text">带娃那系列作息表我截图存了，双职工确实需要这种具体到几点备菜的内容，比讲道理有用。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#ff6b3d">橙</span><span class="cmt-nick">橙子汽水</span><span class="cmt-time">11 月 7 日</span></div><div class="cmt-text">下班后二十分钟跟练的膝盖替代动作很贴心，我半月板不太好也能跟上，就是希望多出几条拉伸。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#6c3ce0">夜</span><span class="cmt-nick">夜航船</span><span class="cmt-time">11 月 7 日</span></div><div class="cmt-text">悬疑微剧时间线错位是双刃剑，雾港疑云第 5 集我完全没接上，倒回去看了两遍才明白。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#c2410c">吃</span><span class="cmt-nick">吃面加蛋</span><span class="cmt-time">11 月 6 日</span></div><div class="cmt-text">城南篇糖水铺那集，母女俩凌晨一点还在备料，看完有点感慨，比单纯拍甜品有分量。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#4a24a8">慢</span><span class="cmt-nick">慢跑的阿杰</span><span class="cmt-time">11 月 6 日</span></div><div class="cmt-text">旅拍系列里爆胎那段没剪掉挺好的，真实路况就是这样，比一路顺风的 vlog 可信。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#8b5cf6">拾</span><span class="cmt-nick">拾光笔记</span><span class="cmt-time">11 月 5 日</span></div><div class="cmt-text">通货膨胀系列讲工资那条我看了两遍，终于明白为什么数字涨了但感觉没变。就是有些概念还是快了点。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#0f7a45">南</span><span class="cmt-nick">南方有雨</span><span class="cmt-time">11 月 5 日</span></div><div class="cmt-text">晚风第八封信前六集节奏偏慢，我是从第 7 集才开始上头的，建议新观众有点耐心。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#ff6b3d">番</span><span class="cmt-nick">番茄炒一切</span><span class="cmt-time">11 月 4 日</span></div><div class="cmt-text">古装轻喜的台词密度确实高，吃饭时候看容易错过包袱，得暂停回看。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#6c3ce0">木</span><span class="cmt-nick">木木夕</span><span class="cmt-time">11 月 4 日</span></div><div class="cmt-text">亲子系列看到第 30 多条了，幼儿园冬季作息那集特别实用，我家也是双职工，照着调整了接送。</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#c2410c">一</span><span class="cmt-nick">一只咸鱼</span><span class="cmt-time">11 月 3 日</span></div><div class="cmt-text">雾港疑云官方那条时间线对照图来得太及时，我对着图重看了一遍前九集，线索清楚多了。</div></div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="panel section-gap" id="news" aria-labelledby="news-h">
+        <div class="sec-head"><h2 class="panel-title" id="news-h" style="margin-bottom:0">短片动态资讯</h2></div>
+        <ul class="news-list">
+          <li>
+            <img class="news-thumb" src="https://picsum.photos/seed/wanfeng-jieju14/600/400" alt="晚风里的第八封信大结局相关配图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <div class="news-title">《晚风里的第八封信》第 14 集大结局上线，邮戳伏笔全部回收</div>
+              <div class="news-abs">大结局补齐了两代人收信的先后顺序，前 13 集出现的三处邮戳细节在结尾对照呈现。</div>
+              <div class="news-date">2026-11-08</div>
+            </div>
+          </li>
+          <li>
+            <img class="news-thumb" src="https://picsum.photos/seed/wugang-shijianxian09/600/400" alt="雾港疑云时间线对照图配图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <div class="news-title">《雾港疑云》发布第 1—9 集时间线对照图</div>
+              <div class="news-abs">对照图标注三条叙事线的节点与重复出现的物件，制作方称后续两集会再补一版完整版。</div>
+              <div class="news-date">2026-11-05</div>
+            </div>
+          </li>
+          <li>
+            <img class="news-thumb" src="https://picsum.photos/seed/yexiao-tangshui03/600/400" alt="夜宵地图糖水铺母女条目配图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <div class="news-title">「糖水铺母女」单条播放破 30 万，评论区补充真实营业时间</div>
+              <div class="news-abs">该条记录了母女俩凌晨备料到收摊的全过程，观众在评论区补充了不同季节的营业时段。</div>
+              <div class="news-date">2026-11-03</div>
+            </div>
+          </li>
+          <li>
+            <img class="news-thumb" src="https://picsum.photos/seed/qiche-dali08/600/400" alt="骑车去大理系列完结配图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <div class="news-title">《一个人骑车去大理》八条全部更新，附全程费用汇总</div>
+              <div class="news-abs">系列按天分段记录里程、爬升与住宿价格，最后一条给出八天总花费与装备使用反馈。</div>
+              <div class="news-date">2026-11-07</div>
+            </div>
+          </li>
+          <li>
+            <img class="news-thumb" src="https://picsum.photos/seed/jianzhi-jianjing18/600/400" alt="下班后二十分钟跟练新增专辑配图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <div class="news-title">《下班后二十分钟跟练》新增「久坐肩颈」专辑共 4 条</div>
+              <div class="news-abs">新专辑针对久坐人群设计，单条 18 分钟，动作均提供膝盖不适的替代版本。</div>
+              <div class="news-date">2026-11-06</div>
+            </div>
+          </li>
+          <li>
+            <img class="news-thumb" src="https://picsum.photos/seed/richang-shuangzhigong36/600/400" alt="带娃的第七百三十天更新配图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <div class="news-title">《带娃的第七百三十天》更新第 36 条，记录冬季作息调整</div>
+              <div class="news-abs">该条详细列出幼儿园冬季接送时间变化后，双职工家庭的备菜与轮班安排。</div>
+              <div class="news-date">2026-11-07</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="panel section-gap" id="related" aria-labelledby="related-h">
+        <div class="sec-head"><h2 class="panel-title" id="related-h" style="margin-bottom:0">延伸方向与同类条目</h2></div>
+        <div class="rel-tags">
+          <a href="/#featured">小城情感短剧合集</a>
+          <a href="/#featured">旧案重查类悬疑</a>
+          <a href="/#featured">夜市摊主经营实录</a>
+          <a href="/#featured">长途骑行装备清单</a>
+          <a href="/#featured">经济学名词白板讲解</a>
+          <a href="/#featured">双职工育儿作息</a>
+          <a href="/#featured">无器械居家跟练</a>
+        </div>
+      </section>
+
+      <!-- 11 补充板块：热门榜单 -->
+      <section class="panel section-gap" id="rank" aria-labelledby="rank-h">
+        <div class="sec-head"><h2 class="panel-title" id="rank-h" style="margin-bottom:0">本周短片热度榜</h2><span style="font-size:12px;color:var(--ink-3)">截至 2026-11-08</span></div>
+        <ol class="rank-list">
+          <li><span class="rank-name">晚风里的第八封信</span><span class="rank-score">98.2万</span></li>
+          <li><span class="rank-name">雾港疑云</span><span class="rank-score">86.5万</span></li>
+          <li><span class="rank-name">夜宵地图·城南篇</span><span class="rank-score">74.1万</span></li>
+          <li><span class="rank-name">一个人骑车去大理</span><span class="rank-score">61.8万</span></li>
+          <li><span class="rank-name">三分钟讲透通货膨胀</span><span class="rank-score">58.3万</span></li>
+          <li><span class="rank-name">换了身份来见你</span><span class="rank-score">52.7万</span></li>
+          <li><span class="rank-name">带娃的第七百三十天</span><span class="rank-score">44.6万</span></li>
+          <li><span class="rank-name">下班后二十分钟跟练</span><span class="rank-score">39.2万</span></li>
+        </ol>
+      </section>
+
+    </div>
+
+    <!-- 右辅助栏 -->
+    <aside class="side-col" aria-label="辅助信息">
+      <div class="panel side-panel">
+        <h2 class="panel-title">今日更新速览</h2>
+        <ul class="rel-list" style="font-size:12.8px">
+          <li><span class="idx">1</span><span>晚风里的第八封信 · 第 14 集</span></li>
+          <li><span class="idx">2</span><span>雾港疑云 · 第 9 集</span></li>
+          <li><span class="idx">3</span><span>夜宵地图 · 桥下炒粉档</span></li>
+          <li><span class="idx">4</span><span>通货膨胀 · 第 21 条</span></li>
+          <li><span class="idx">5</span><span>带娃第 730 天 · 第 36 条</span></li>
+        </ul>
+      </div>
+
+      <div class="panel side-panel">
+        <h2 class="panel-title">题材热度</h2>
+        <ul class="trend-list">
+          <li><a href="/#featured">都市情感短剧</a></li>
+          <li><a href="/#featured">悬疑推理微剧</a></li>
+          <li><a href="/#featured">美食探店纪录</a></li>
+          <li><a href="/#featured">旅拍骑行vlog</a></li>
+          <li><a href="/#featured">经济学知识口播</a></li>
+        </ul>
+      </div>
+
+      <div class="panel side-panel">
+        <h2 class="panel-title">编辑提示</h2>
+        <div class="side-figure">
+          <img src="https://picsum.photos/seed/bianji-tishi11/400/600" alt="短片挑选与追更节奏提示封面" width="400" height="600" loading="lazy">
+        </div>
+        <p class="side-note">连载短剧建议固定每天一集，避免断档后忘记前情；纪实短片适合按主题攒三五条，通勤时集中看，比零散刷更省时间。</p>
+      </div>
+
+      <div class="panel side-panel">
+        <h2 class="panel-title">快速跳转</h2>
+        <ul class="rel-list" style="font-size:12.6px">
+          <li><span class="idx">·</span><a href="/#deep">类型差异对比表</a></li>
+          <li><span class="idx">·</span><a href="/#guide">挑片六步顺序</a></li>
+          <li><span class="idx">·</span><a href="/#faq">更新节奏问答</a></li>
+          <li><span class="idx">·</span><a href="/#rank">本周热度榜</a></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="ft-inner">
+    <div class="ft-top">
+      <div>
+        <div class="ft-brand">茄子短视频官方网站在线观看</div>
+        <p class="ft-desc">聚合都市短剧、悬疑微剧、古装轻喜、美食探店、旅拍vlog 与知识口播六类短片，标注集数进度、更新节奏与具体看点，帮助观众按题材和时长挑到合适的内容。</p>
+      </div>
+      <div class="ft-col">
+        <h4>内容方向</h4>
+        <a href="/#featured">都市情感短剧</a>
+        <a href="/#featured">悬疑推理微剧</a>
+        <a href="/#featured">古装轻喜剧</a>
+        <a href="/#featured">美食探店纪录</a>
+      </div>
+      <div class="ft-col">
+        <h4>观看与判断</h4>
+        <a href="/#deep">类型差异对比</a>
+        <a href="/#guide">挑片观看顺序</a>
+        <a href="/#faq">更新节奏问答</a>
+        <a href="/#rank">本周热度榜</a>
+      </div>
+      <div class="ft-col">
+        <h4>栏目导航</h4>
+        <a href="/#overview">平台概览</a>
+        <a href="/#updates">今日分集更新</a>
+        <a href="/#category">题材分类</a>
+        <a href="/#comments">观众评论</a>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© 2026 茄子短视频官方网站在线观看</span>
+      <span class="ft-disclaimer">部分内容为示例数据，仅用于展示页面结构</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var hint = document.getElementById('searchHint');
+
+  function clearMarks(){
+    document.querySelectorAll('mark[data-hit]').forEach(function(m){
+      var parent = m.parentNode;
+      parent.replaceChild(document.createTextNode(m.textContent), m);
+      parent.normalize();
+    });
+  }
+
+  function doSearch(){
+    var q = (input.value || '').trim();
+    clearMarks();
+    if(!q){
+      hint.classList.remove('on');
+      hint.textContent = '';
+      return;
+    }
+    var needle = q.toLowerCase();
+    var scope = document.querySelector('.portal-grid');
+    if(!scope) return;
+    var walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node){
+        if(!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        var p = node.parentNode;
+        if(!p) return NodeFilter.FILTER_REJECT;
+        var tag = p.nodeName;
+        if(tag === 'SCRIPT' || tag === 'STYLE' || tag === 'MARK') return NodeFilter.FILTER_REJECT;
+        if(needle && node.nodeValue.toLowerCase().indexOf(needle) === -1) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var nodes = [];
+    var n;
+    while((n = walker.nextNode())) nodes.push(n);
+
+    if(!nodes.length){
+      hint.classList.add('on');
+      hint.textContent = '未找到与「' + q + '」相关的内容，试试「悬疑」「美食」「短剧」等关键词。';
+      return;
+    }
+
+    var count = 0;
+    var first = null;
+    nodes.forEach(function(node){
+      var text = node.nodeValue;
+      var lower = text.toLowerCase();
+      var idx = lower.indexOf(needle);
+      if(idx === -1) return;
+      var frag = document.createDocumentFragment();
+      var last = 0;
+      while(idx !== -1){
+        frag.appendChild(document.createTextNode(text.slice(last, idx)));
+        var mark = document.createElement('mark');
+        mark.setAttribute('data-hit','1');
+        mark.style.background = '#ffe58a';
+        mark.style.color = '#3a2600';
+        mark.style.borderRadius = '3px';
+        mark.textContent = text.substr(idx, q.length);
+        frag.appendChild(mark);
+        last = idx + q.length;
+        idx = lower.indexOf(needle, last);
+        count++;
+      }
+      frag.appendChild(document.createTextNode(text.slice(last)));
+      var parent = node.parentNode;
+      parent.replaceChild(frag, node);
+      if(!first){
+        var el = parent;
+        while(el && el.nodeType === 1 && !el.getAttribute('id')) el = el.parentNode;
+        first = parent;
+      }
+    });
+
+    hint.classList.add('on');
+    hint.textContent = '找到 ' + count + ' 处与「' + q + '」相关的内容。';
+    if(nodes[0] && nodes[0].parentNode){
+      var target = nodes[0].parentNode;
+      while(target && target !== scope && target.nodeType === 1){
+        if(target.tagName === 'SECTION' || target.tagName === 'ARTICLE'){
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+          break;
+        }
+        target = target.parentNode;
+      }
+    }
+  }
+
+  btn.addEventListener('click', doSearch);
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+  input.addEventListener('search', function(){
+    if(!input.value) { clearMarks(); hint.classList.remove('on'); hint.textContent=''; }
+  });
+})();
+</script>
+</body>
+                                                                  </html>
